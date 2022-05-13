@@ -91,7 +91,6 @@ const SkillBadge = (props) => {
     <div className="skill-badge">
         <img src={props.icon} alt="kotlin" />
         <h2>
-          {console.log(props.title)}
           {props.title}
         </h2>
     </div>
