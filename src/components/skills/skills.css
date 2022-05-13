@@ -22,7 +22,8 @@
 }
 
 .skills .skill-badge {
-  margin-top: 35px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   display: grid;
   position: relative;
   justify-content: space-between;
@@ -42,7 +43,7 @@
 .skills .skill-badge h2 {
   position: relative;
   margin-top: 15px;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 500;
   display: flex;
   flex-direction: column;
@@ -55,13 +56,21 @@
   top: 10px;
   text-align: center;
   font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.title-txt {
+  font-size: 18px;
+  top: 10px;
+  text-align: center;
+  font-weight: 100;
 }
 
 @media (max-width: 1100px) {
   .skill-container .skills {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -74,21 +83,11 @@
 }
 
 @media (max-width: 820px) {
-  .skill-container {
-    position: relative;
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-    min-height: 100vh;
-    margin-top: 10px;
-    padding: 15px;
-    overflow-x: hidden;
-  }
 
   .skill-container .skills {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -98,59 +97,48 @@
     padding: 20px;
     border-radius: 50px;
   }
-  
-  .skills .skill-badge {
-    margin-top: 35px;
-    padding: 10px;
-  }
-  
-  .skills .skill-badge img {
-    height: 130px;
-    width: 130px;
-    border-radius: 40px;
-    padding: 30px;
-    background-size: cover;
-    background-position: center;
-    border: 2px solid var(--color-sec-light);
-  }
-  
-  .skills .skill-badge h2 {
-    position: relative;
-    margin-top: 15px;
-    font-size: 21px;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Open Sans';
-    text-align: center;
-  }
 
 }
 
 @media (max-width: 500px) {
-  .skill-container {
+  .skill-container .skills {
     position: relative;
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-    min-height: 100vh;
-    margin-top: 10px;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    background: rgba(0, 0, 0, 0.116);
     padding: 20px;
-    overflow-x: hidden;
+    border-radius: 50px;
   }
-
 }
 
 @media (max-width: 400px) {
-  .skill-container {
+
+  .skill-container .skills {
     position: relative;
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-    min-height: 100vh;
-    margin-top: 10px;
-    padding: 30px 10px 0;
-    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    background: rgba(0, 0, 0, 0.116);
+    padding: 5px;
+    border-radius: 50px;
+  }
+
+  .skills .skill-badge {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: grid;
+    position: relative;
+    justify-content: space-between;
+    padding: 5px;
   }
 
 }

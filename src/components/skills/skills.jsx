@@ -20,8 +20,8 @@ function About() {
     <div id="skills" className="container skill-container">
       <div>
         <h1 className="member-txt">My Skills</h1>
+          <h1 className="title-txt">Programming Languages </h1>
           <div className="skills">
-            <h1 className="member-txt">Programming Languages </h1>
             <SkillBadge
               icon = {kotlinIcon}
               title = 'Kotlin'
@@ -48,8 +48,8 @@ function About() {
             />
           </div>
 
+          <h1 className="title-txt">Frameworks</h1>
           <div className="skills">
-            <h1 className="member-txt">Frameworks</h1>
             <SkillBadge
               icon = {androidIcon}
               title = 'Android'
@@ -68,8 +68,8 @@ function About() {
             />
           </div>
 
+          <h1 className="title-txt">Tools</h1>
           <div className="skills">
-            <h1 className="member-txt">Tools</h1>
             <SkillBadge
               icon = {gitIcon}
               title = 'Git'
