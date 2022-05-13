@@ -1,0 +1,385 @@
+.member-txt {
+  font-size: 20px;
+  top: 10px;
+  font-weight: 100;
+}
+
+.members-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin-top: 100px;
+}
+
+.members-container .member {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  background: rgba(0, 0, 0, 0.116);
+  padding: 20px;
+  border-radius: 50px;
+}
+.members-container .member .member-img {
+  height: 130px;
+  width: 130px;
+  border-radius: 40px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid var(--color-sec-light);
+}
+
+.members-container .member .member-info {
+  margin-left: 50px;
+  font-family: "Open Sans Condensed";
+  max-width: 50%;
+}
+
+.members-container .member .member-info .name {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.members-container .member .member-info h3 {
+  margin-top: 12px;
+  font-weight: 100;
+  font-size: 32px;
+}
+
+.members-container .member .member-info .info {
+  margin-top: 4px;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.members-container .member .member-info .description {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+@media (max-width: 820px) {
+  .members-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 50px;
+    width: 90%;
+  }
+
+  .members-container .member {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    background: rgba(0, 0, 0, 0.116);
+    padding: 18px;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+  }
+  .members-container .member .member-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light);
+  }
+
+  .members-container .member .member-info {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Open Sans Condensed";
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .members-container .member .member-info .name {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .members-container .member .member-info h3 {
+    margin-top: 12px;
+    font-weight: 100;
+    font-size: 22px;
+  }
+  .members-container .member .member-info .info {
+    margin-top: 4px;
+    font-weight: 100;
+    font-size: 16px;
+  }
+
+  .members-container .member .member-info .description {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 100;
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .members-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 100px;
+  }
+
+  .members-container .member {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.116);
+    padding: 15px;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+  }
+  .members-container .member .member-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light);
+  }
+
+  .members-container .member .member-info {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Open Sans Condensed";
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .members-container .member .member-info .name {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .members-container .member .member-info .info {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .members-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 10px;
+  }
+
+  .members-container .member {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.116);
+    padding: 15px;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+  }
+  .members-container .member .member-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light);
+  }
+
+  .members-container .member .member-info {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Open Sans Condensed";
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .members-container .member .member-info .name {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .members-container .member .member-info .info {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .members-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .members-container .member {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.116);
+    padding: 15px;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+  }
+  .members-container .member .member-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light);
+  }
+
+  .members-container .member .member-info {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Open Sans Condensed";
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .members-container .member .member-info .name {
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .members-container .member .member-info .info {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .members-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .members-container .member {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.116);
+    padding: 15px;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+  }
+  .members-container .member .member-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light);
+  }
+
+  .members-container .member .member-info {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Open Sans Condensed";
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .members-container .member .member-info .name {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .members-container .member .member-info h3 {
+    margin-top: 65px;
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  .members-container .member .member-info .info {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 12px;
+  }
+
+  .members-container .member .member-info .description {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 100;
+    font-size: 14px;
+  }
+
+}
