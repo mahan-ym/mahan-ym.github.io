@@ -1,7 +1,6 @@
 import Header from "./components/header/header";
 import Home from "./components/home/home";
 import About from "./components/skills/skills";
-import $ from 'jquery';
 import Contact from "./components/contact/contact";
 import Navbar from "./components/nav/nav";
 import Experience from "./components/experience/experience";
