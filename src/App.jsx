@@ -17,39 +17,9 @@ function App() {
       <Home />
       <About />
       <Experience />
-      <Contact resumedownload = {getResume} cvdownload = {getCV}/>
+      <Contact />
    </>
   );
-}
-
-function getResume() {
-  $.ajax({
-    url:'/resume.pdf',
-    dataType:'pdf',
-    cache: false,
-    success: function(data){
-      this.setState({resumeData: data});
-    }.bind(this),
-    error: function(xhr, status, err){
-      console.log(err);
-      alert(err);
-    }
-  });
-}
-
-function getCV() {
-  $.ajax({
-    url:'/cv.pdf',
-    dataType:'pdf',
-    cache: false,
-    success: function(data){
-      this.setState({resumeData: data});
-    }.bind(this),
-    error: function(xhr, status, err){
-      console.log(err);
-      alert(err);
-    }
-  });
 }
 
 export default App;

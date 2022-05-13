@@ -2,7 +2,7 @@ import "./contact.css";
 import { AiOutlineLinkedin, AiOutlineGithub,
    AiOutlineMedium, AiOutlineDownload, AiOutlineMail } from "react-icons/ai";
 
-function Contact(props) {
+function Contact() {
   return (
     <>
     <div id="contact" className="container contact-container">
@@ -58,12 +58,12 @@ function Contact(props) {
     <div id="download" className="container download-container">
       <div className="contact-links">
 
-        <a href= {props.resumedownload} className="contact" target={"blank"}>
+        <a href="/resume.pdf" className="contact" >
             <AiOutlineDownload className="icon"/>
             <h2>Download Resume</h2>
         </a>
 
-        <a href= {props.resumedownload} className="contact" target={"blank"}>
+        <a href="/cv.pdf" className="contact" >
             <AiOutlineDownload className="icon"/>
             <h2>Download CV</h2>
         </a>
