@@ -1,7 +1,8 @@
 import "./nav.css";
 import { AiOutlineHome } from "react-icons/ai";
 import { MdWorkOutline, MdOutlineBuild } from "react-icons/md";
-import { BiMessageRoundedDots } from "react-icons/bi";
+import { BiMessageRoundedDots, BiImage } from "react-icons/bi";
+
 
 function Navbar() {
   return (
@@ -14,6 +15,9 @@ function Navbar() {
       </a>
       <a href="#experience">
         <MdWorkOutline className="icon" />
+      </a>
+      <a href="#gallery">
+        <BiImage className="icon" />
       </a>
       <a href="#contact">
         <BiMessageRoundedDots className="icon" />
