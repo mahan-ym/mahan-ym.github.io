@@ -10,8 +10,13 @@
   z-index: 1;
 }
 
+a {
+  color: rgb(47, 179, 255);
+  text-decoration: underline;
+}
+
 body {
-  background: rgb(2, 2, 26);
+  background: rgb(21, 21, 34);
   min-height: 100vh;
   font-family: "Inter", sans-serif;
   animation: move 1s linear infinite forwards;
@@ -26,17 +31,17 @@ body::before {
   position: fixed;
   height: 200px;
   width: 200px;
-  background: rgb(255, 51, 0);
+  background: rgb(0, 170, 255);
   filter: blur(140px);
 }
 body::after {
   content: "";
   position: fixed;
-  top: 200px;
-  left: 250px;
+  bottom: 0px;
+  left: 0px;
   height: 200px;
   width: 200px;
-  background: rgb(183, 0, 255);
+  background: rgb(0, 85, 255);
   filter: blur(140px);
 }
 .bg-circle1 {
@@ -45,27 +50,20 @@ body::after {
   right: 0px;
   height: 200px;
   width: 200px;
-  background: rgb(0, 255, 255);
+  background: rgb(0, 255, 204);
   filter: blur(140px);
 }
+
 .bg-circle2 {
   position: fixed;
-  bottom: 100px;
-  right: 250px;
-  height: 200px;
-  width: 200px;
-  background: rgb(0, 255, 47);
-  filter: blur(150px);
-}
-.bg-circle3 {
-  position: fixed;
   bottom: 0px;
-  left: 250px;
+  right: 0px;
   height: 200px;
   width: 200px;
-  background: rgb(217, 255, 0);
-  filter: blur(150px);
+  background: rgb(119, 0, 255);
+  filter: blur(140px);
 }
+
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -76,7 +74,7 @@ body::after {
   --color-sec: rgb(102, 21, 134);
   --color-sec-light: rgba(139, 17, 187, 0.274);
 
-  --pc-width: 75%;
+  --pc-width: 85%;
   --tab-width: 90%;
   --phone-width: 100%;
 }
@@ -87,7 +85,7 @@ body::after {
   color: var(--text-pri);
   padding: 10px 40px;
   margin: 5px auto;
-  padding: 10px 40px;
+  padding: 5px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
