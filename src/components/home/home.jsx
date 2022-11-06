@@ -1,6 +1,5 @@
 import './home.css';
 import img from '../resources/me.jpg';
-import Buttons from '../button/button';
 import { BsMouse } from 'react-icons/bs';
 
 function Home() {
@@ -25,7 +24,6 @@ function Home() {
         </p>
       </h2>
 
-      <Buttons />
     </div>
   );
 }
