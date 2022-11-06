@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div className="navigation">
       <a href="#home">
-        <AiOutlineHome className="icon active-nav" />
+        <AiOutlineHome className="icon" />
       </a>
       <a href="#skills">
         <MdOutlineBuild className="icon" />

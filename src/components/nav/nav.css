@@ -35,19 +35,9 @@
   fill: rgb(209, 217, 252);
 }
 
-.navigation .icon.active-nav {
-  fill: rgb(88, 117, 248);
-  border: 2px solid rgb(88, 117, 248);
-}
-
 .navigation .icon:hover {
-  fill: rgba(88, 117, 248, 0.151);
-  border: 2px solid rgba(88, 117, 248, 0.192);
-}
-
-.navigation .icon.active-nav:hover {
-  fill: rgb(88, 117, 248);
-  border: 2px solid rgb(88, 117, 248);
+  fill: rgba(88, 117, 248, 0.777);
+  border: 2px solid rgba(88, 232, 248, 0.812);
 }
 
 @media (max-width: 820px) {

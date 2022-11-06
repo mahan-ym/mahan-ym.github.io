@@ -53,18 +53,18 @@ const Experience = () => {
               "I joined as a software engineer and developed several software during my activity.", <br/>,
               <ul>
                 <li>Developed a calibration software</li>
-                <ul>
+                <ol>
                   <li>Calibration of UPS Boards using Modbus RTU connection protocol</li>
                   <li>Generation of customized options for calibration</li>
-                </ul>
+                </ol>
               </ul>,
               <ul>
                 <li>Developed an Android application in three major versions</li>
-                <ul>
+                <ol>
                   <li>Calibration of UPS boards using Modbus RTU connection protocol</li>
                   <li>Generation of customized options for calibration</li>
                   <li>Utilized Bluetooth connection for calibration</li>
-                </ul>
+                </ol>
             </ul>
             ]}
           />
