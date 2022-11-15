@@ -10,5 +10,13 @@ export const SliderData = [
     {
       image:
         '/gallery/3.png'
+    },
+    {
+      image:
+        '/gallery/4.png'
+    },
+    {
+      image:
+        '/gallery/5.png'
     }
   ];
