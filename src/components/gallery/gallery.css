@@ -35,6 +35,8 @@
 
 .right-arrow {
   position: absolute;
+  box-shadow: 3px 3px 5px black;
+  border-radius:50%;
   top: 50%;
   right: 0px;
   font-size: 2rem;
@@ -45,6 +47,8 @@
 
 .left-arrow {
   position: absolute;
+  box-shadow: 3px 3px 5px black;
+  border-radius:50%;
   top: 50%;
   left: 0px;
   font-size: 2rem;
