@@ -1,7 +1,7 @@
 import "./blog.css";
 import axios from 'axios';
 import Moment from 'moment';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import BlogCard from "./blog-card";
 
 
@@ -13,23 +13,24 @@ const Blogs = () => {
   const getBlogs = async() => {
     await axios.get(mediumURL)
     .then((data) => {
-      console.log(data)
-      setBlogs(data.data.items)
-      setBlogAvatar(data.data.feed.image)
+      if(data.status === 200) {
+        setBlogs(data.data.items)
+        setBlogAvatar(data.data.feed.image)
+      }
+    }).catch(error => {
+      console.log(error)
     })
   }
 
   useEffect(() => {
-    return () => {
-      getBlogs();
-    };
+    getBlogs();
   }, []);
 
   return (
     <div className="container blog-container">
       <h1 className="member-txt">Blogs</h1>
       <div className="blogs">
-        {blogs?.map((blog) => {
+        {blogs && blogs.map((blog) => {
           return (
             <BlogCard 
             title = {blog.title} 
