@@ -19,7 +19,7 @@ function About() {
   return (
     <div id="skills" className="container skill-container">
       <div>
-        <h1 className="member-txt">My Skills</h1>
+        <h1 className="member-txt">Skills</h1>
           <h1 className="title-txt">Programming Languages </h1>
           <div className="skills">
             <SkillBadge

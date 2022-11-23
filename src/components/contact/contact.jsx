@@ -6,7 +6,7 @@ function Contact() {
   return (
     <>
     <div id="contact" className="container contact-container">
-      <h1>My Media</h1>
+      <h1 className="member-txt">Media</h1>
       <div className="contact-links">
         
         <a

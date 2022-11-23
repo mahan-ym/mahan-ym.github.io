@@ -9,12 +9,11 @@
   padding: 50px;
 }
 
-.contact-container h1 {
-  margin: 0 auto;
-  font-size: 22px;
-  font-family: 'Open Sans Condensed';
-  font-weight: 400;
-  color: var(--color-pri);
+  
+.member-txt {
+  font-size: 20px;
+  top: 10px;
+  font-weight: 100;
 }
 
 .contact-container .contact-links {
