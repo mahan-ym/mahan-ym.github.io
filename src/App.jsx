@@ -5,6 +5,7 @@ import Gallery from "./components/gallery/gallery";
 import Contact from "./components/contact/contact";
 import Navbar from "./components/nav/nav";
 import Experience from "./components/experience/experience";
+import Blogs from "./components/blogs/blog";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Experience />
       <Gallery />
+      <Blogs />
       <Contact />
    </>
   );
