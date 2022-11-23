@@ -142,3 +142,11 @@
   }
 
 }
+
+@media (max-width: 300px) {
+
+  .skill-container .skills {
+    grid-template-columns: auto ;
+  }
+
+}
