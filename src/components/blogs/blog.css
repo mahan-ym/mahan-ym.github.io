@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 100px;
   }
 
   .blog-container .blogs {
@@ -71,7 +70,7 @@
     background: whitesmoke;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 0px 0px 20px 20px;
