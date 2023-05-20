@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.23827438.css",
+    "main.js": "/static/js/main.fa05636e.js",
+    "static/media/kotlin.png": "/static/media/kotlin.ea1f30beabffbf71d58c.png",
+    "static/media/swift.png": "/static/media/swift.3c88ee49df39fa356580.png",
+    "static/media/me.jpg": "/static/media/me.32e14b21674ad28a94f9.jpg",
+    "static/media/linux.png": "/static/media/linux.1035920f7774d37a8f45.png",
+    "static/media/java.png": "/static/media/java.5d5cffa04d820ba0644c.png",
+    "static/media/js.png": "/static/media/js.cf7522f436d6510da302.png",
+    "static/media/Android.png": "/static/media/Android.f27631ef9ea6e38c8926.png",
+    "static/media/react.png": "/static/media/react.20adfb35ae6a6e5817bf.png",
+    "static/media/git.png": "/static/media/git.dfdd0989ffe0184bdd68.png",
+    "static/media/python.png": "/static/media/python.91fe66c93d19d67edfc8.png",
+    "static/media/ts.png": "/static/media/ts.bb13ebd9561a6ee645c2.png",
+    "index.html": "/index.html",
+    "main.23827438.css.map": "/static/css/main.23827438.css.map",
+    "main.fa05636e.js.map": "/static/js/main.fa05636e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23827438.css",
+    "static/js/main.fa05636e.js"
+  ]
+}
