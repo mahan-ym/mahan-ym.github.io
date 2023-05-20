@@ -1,22 +1,30 @@
+import one from "../resources/gallery/one.png"
+import two from "../resources/gallery/two.png"
+import three from "../resources/gallery/three.png"
+import four from "../resources/gallery/four.png"
+import five from "../resources/gallery/five.png"
+
+
+
 export const SliderData = [
     {
       image:
-        '/gallery/1.png'
+        one
     },
     {
       image:
-        '/gallery/2.png'
+        two
     },
     {
       image:
-        '/gallery/3.png'
+        three
     },
     {
       image:
-        '/gallery/4.png'
+        four
     },
     {
       image:
-        '/gallery/5.png'
+        five
     }
   ];
