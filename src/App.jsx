@@ -1,11 +1,10 @@
-import './App.css'
+import React from 'react';
+import Home from './components/Home';
 
-function App() {
-
+const App = () => {
   return (
-    <>
-    </>
-  )
-}
+        <Home />
+  );
+};
 
-export default App
+export default App;
