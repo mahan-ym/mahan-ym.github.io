@@ -1,0 +1,19 @@
+.about-me {
+    @apply bg-black bg-opacity-50 text-white p-4 ml-10 mt-5 rounded-2xl;
+}
+
+.about-me h1 {
+    @apply text-5xl font-bold mb-2;
+}
+
+.about-me p {
+    @apply text-2xl text-justify;
+}
+
+.about-me h2 {
+    @apply font-semibold mb-2 text-4xl;
+}
+
+.about-me a {
+    @apply text-turquoise-persian-blue underline;
+}
