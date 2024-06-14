@@ -5,9 +5,9 @@ import {Canvas} from "@react-three/fiber";
 function MahanObjCanvas() {
     return (
         <Canvas>
-            <ambientLight intensity={1} />
-            <spotLight position={[10, 10, 10]} angle={0.5} penumbra={1} />
-            <pointLight position={[-10, -10, -10]} />
+            <hemisphereLight color={"#ffffff"} groundColor={"#000000"} intensity={1} position={ [0, 1, 0] } />
+            <pointLight color={"#F77FBE"} intensity={3} position={ [1, 2, 1] } />
+            <pointLight color={"#57C5C6"} intensity={4} position={ [-2, 2, 1] } />
             <MahanObj />
         </Canvas>
     );
