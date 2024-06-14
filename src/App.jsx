@@ -1,9 +1,13 @@
 import React from 'react';
-import Home from './components/Home';
+import Home from './components/Home.jsx';
+import Experience from "./components/Experience.jsx";
 
 const App = () => {
   return (
+      <>
         <Home />
+        <Experience />
+      </>
   );
 };
 
