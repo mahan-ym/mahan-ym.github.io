@@ -1,23 +1,58 @@
-import React from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Html, useGLTF, useFBX } from '@react-three/drei';
+import React, {useEffect, useRef} from 'react';
 import background from '../public/images/background.jpg';
-import avatarModel from '../public/model/avatar.glb';
-'framer-motion';
-
-
-function Avatar() {
-  const { scene } = useGLTF(avatarModel);
-  return <primitive object={scene} scale={0.5} position={[0, -1, 0]} />;
-}
+import AboutMe from "./aboutme/AboutMe.jsx";
+import MahanObjCanvas from "./avatar/MahanObjCanvas.jsx";
 
 const Home = () => {
+    const homeRef = useRef(null);
+    const aboutMeRef = useRef(null);
+    const AvatarRef = useRef(null);
+    const zoomThreshold = 300;
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const scaleFactor = 1 + scrollY * 0.0025;
+            const translateFactor = -scrollY * 4;
+
+            if (scrollY <= zoomThreshold) {
+                if (homeRef.current) {
+                    homeRef.current.style.transform = `scale(${scaleFactor})`;
+                }
+
+                if (aboutMeRef.current) {
+                    aboutMeRef.current.style.transform = `translateX(${translateFactor}px)`;
+                }
+                if (AvatarRef.current) {
+                    AvatarRef.current.style.transform = `translateX(${-translateFactor}px)`;
+                }
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
   return (
-    <div className="homepage">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </div>
+      <div className={"relative w-screen h-screen overflow-hidden"}>
+          <div ref={homeRef} className="absolute inset-0" style={{
+              backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url(${background})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              transformOrigin: 'top',
+          }}>
+          </div>
+          <div className="relative flex items-center w-full h-full">
+              <div ref={aboutMeRef} className="w-3/5 h-screen content-center">
+                  <AboutMe/>
+              </div>
+              <div ref={AvatarRef} className="w-2/5 h-screen">
+                  <MahanObjCanvas/>
+              </div>
+          </div>
+      </div>
   );
 };
 
