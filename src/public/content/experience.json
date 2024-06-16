@@ -1,0 +1,45 @@
+{
+  "industry": [
+    {
+      "position": "Android Developer",
+      "company": "Footballist App",
+      "location": "International",
+      "date": "04/2022 - 12/2022",
+      "length": "9 months",
+      "description": "Footballist is a live football score, stats, and news-tracking application.",
+      "achievements": [
+        "Used Jetpack Compose for UI, reducing development costs and time by half compared to the use of XML views.",
+        "Applied a caching system with Room and a local database, reducing network requests by 10%.",
+        "Utilized Firebase EventMessages for live data transmission, optimizing battery and memory consumption."
+      ]
+    },
+    {
+      "position": "SDK Developer",
+      "company": "Metrix",
+      "location": "IRAN",
+      "date": "08/2021 - 04/2022",
+      "length": "9 months",
+      "description": "Metrix is an analytics SDK for mobile attribution, analytics, and fraud prevention.",
+      "achievements": [
+        "Reduced Gradle build time and improved network status detection precision by refactoring the entire SDK.",
+        "Implemented async API calls for native SDK integration (Flutter, React Native, Unity).",
+        "Used referrers to track installation from Google Play, and HMS Without adding a dependency on their libraries by using reflection.",
+        "Done emulator detection to monitor trusted events from real devices.",
+        "Created two test applications to make the testing of the SDK possible on real store applications."
+      ]
+    },
+    {
+      "position": "Software Engineer",
+      "company": "JDEVS",
+      "location": "IRAN",
+      "date": "11/2018 - 08/2021",
+      "length": "2 Years + 10 Months",
+      "description": "JDEVS manufactures UPSs, Inverters, Chargers, and Industrial monitoring systems.",
+      "achievements": [
+        "Developed an Android and a C# WPF Calibration application making control boards calibration more precise."
+      ]
+    }
+  ],
+  "academic": [
+  ]
+}
