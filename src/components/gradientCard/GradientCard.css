@@ -1,0 +1,33 @@
+.text-container {
+    @apply  text-white w-fit p-5  relative rounded-lg overflow-hidden
+    bg-gradient-to-r from-gray-900 to-persian-indigo
+}
+
+.g1 {
+    @apply absolute w-3/5 -z-10 aspect-square rounded-full bg-turquoise-persian-blue opacity-20
+    blur-lg origin-center animate-[moveVertical_20s_infinite] top-[50%] left-[50%]
+}
+
+.g2 {
+    @apply absolute w-3/5 -z-10 aspect-square rounded-full bg-persian-green opacity-20
+    blur-lg origin-center animate-[moveInCircle_10s_reverse_infinite] top-[50%] left-[50%]
+}
+
+.g3 {
+    @apply absolute w-3/5 -z-10 aspect-square rounded-full bg-persian-red opacity-20
+    blur-lg origin-center animate-[moveInCircle_20s_linear_infinite] top-[5-%] left-[5-%]
+}
+
+.g4 {
+    @apply absolute w-3/5 -z-10 aspect-square rounded-full bg-persian-pink opacity-20
+    blur-lg origin-center animate-[moveHorizontal_20s_ease_infinite] top-[5-%] left-[5-%]
+}
+
+.g5 {
+    @apply absolute w-3/5 -z-10 aspect-square rounded-full bg-persian-rose opacity-20
+    blur-lg origin-center animate-[moveInCircle_20s_ease_infinite] top-[5-%] left-[5-%]
+}
+
+.text-container h2 {
+    @apply font-semibold mb-2 text-2xl;
+}
