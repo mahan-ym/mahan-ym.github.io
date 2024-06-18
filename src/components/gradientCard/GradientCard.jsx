@@ -2,17 +2,13 @@ import React, {useState} from 'react';
 import './GradientCard.css';
 
 const GradientCard = (props) => {
-    const [mousePosition, setMousePosition] = useState({x: 0, y: 0});
     const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
     const handleMouseMove = (event) => {
         const {clientX, clientY, currentTarget} = event;
-        const card = event.currentTarget;
-        const box = card.getBoundingClientRect();
-        const x = event.clientX - box.left;
-        const y = event.clientY - box.top;
-        const {top, left} = currentTarget.getBoundingClientRect();
-        setMousePosition({x, y});
+        const box = currentTarget.getBoundingClientRect();
+        const x = clientX - box.left;
+        const y = clientY - box.top;
 
         const centerX = box.width / 2;
         const centerY = box.height / 2;
