@@ -3,7 +3,7 @@ import {Canvas, useFrame, useThree} from "@react-three/fiber";
 import { easing } from 'maath'
 import {WaveMaterial} from "./BackgroundShader.js";
 
-function NeonBackground() {
+function NeonBackground(props) {
     const ref = useRef()
     const { viewport, size } = useThree()
     useFrame((state, delta) => {
@@ -13,15 +13,15 @@ function NeonBackground() {
     return (
         <mesh scale={[viewport.width, viewport.height, 1]}>
             <planeGeometry />
-            <waveMaterial ref={ref} key={WaveMaterial.key} resolution={[size.width * viewport.dpr, size.height * viewport.dpr]} />
+            <waveMaterial ref={ref} key={WaveMaterial.key} resolution={[size.width * viewport.dpr, size.height * viewport.dpr]} concentration={props.concentration} />
         </mesh>
     )
 }
 
-export default function NeonBackgroundCanvas() {
+export default function NeonBackgroundCanvas(props) {
     return (
         <Canvas style={{position: "absolute", zIndex: -1}}>
-            <NeonBackground />
+            <NeonBackground concentration={props.concentration} />
         </Canvas>
     )
 };

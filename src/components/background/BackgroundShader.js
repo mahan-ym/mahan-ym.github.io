@@ -6,7 +6,8 @@ const WaveMaterial = shaderMaterial(
     {
         time: 0,
         resolution: new THREE.Vector2(),
-        pointer: new THREE.Vector2()
+        pointer: new THREE.Vector2(),
+        concentration: 1
     },
     /*glsl*/ `
       varying vec2 vUv;
@@ -19,6 +20,7 @@ const WaveMaterial = shaderMaterial(
       }`,
     /*glsl*/ `
       uniform float time;
+      uniform float concentration;
       uniform vec2 resolution;
       uniform vec2 pointer;
       varying vec2 vUv;      
@@ -35,7 +37,7 @@ const WaveMaterial = shaderMaterial(
         vec2 uv = (gl_FragCoord.xy * 2.0 - resolution.xy) / resolution.y;      
         vec2 uv0 = uv;
         vec3 finalColor = vec3(0.0);
-        uv = fract(uv * 4.0) - 0.5;     
+        uv = fract(uv * concentration) - 0.5;     
         uv = sin(uv * 0.5) - pointer;     
         float d = length(uv) * exp(-length(uv0));
         vec3 col = palette(length(uv0) + time * 0.4);
