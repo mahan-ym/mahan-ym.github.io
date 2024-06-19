@@ -7,7 +7,7 @@ import NeonBackgroundCanvas from "./background/NeonBackground.jsx";
 function Experience() {
 
     return (
-        <div className="absolute flex flex-col w-screen h-screen ">
+        <div className="relative flex flex-col w-screen h-screen ">
             <NeonBackgroundCanvas concentration={0.5}/>
             <h1 className="text-4xl font-bold text-white w-full m-4">Experience:</h1>
             {experienceData.industry.map((exp, index) => (

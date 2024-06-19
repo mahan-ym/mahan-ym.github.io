@@ -1,0 +1,9 @@
+{
+  "Languages": ["Kotlin", "Java", "Python", "JavaScript"],
+  "Frameworks & Libraries": ["Jetpack Compose", "Coroutines", "RxJava", "Retrofit", "DI (Hilt, Dagger, Koin)", "LifeCycle", "Unit Testing", "Glide/Coil", "Google Maps", "OpenStreetMap", "ExoPlayer", "Media Controls", "Gradle", "Proguard", "Play Services", "OAuth"],
+  "Architectures": ["MVC", "MVVM", "MVP", "MVI"],
+  "DBs": ["Postgresql", "SQLite"],
+  "Tools & Platforms": ["Linux","Git", "Firebase", "Appmetrica", "Design Patterns", "Clean Architecture", "SOLID & OOP", "Agile", "Jira", "Trello", "ClickUp", "UI & UX (Figma, Adobe XD)"],
+  "Web Technologies": ["HTML", "CSS", "Django", "React", "Rest", "GraphQL"],
+  "Mobile Technologies": ["Native", "Flutter"]
+}
