@@ -13,6 +13,9 @@ export default {
       '2xl': '1680px',
     },
     extend: {
+      fontFamily: {
+        'tiny':['Tiny5']
+      },
       colors: {
         'persian-blue':'#1C39BB',
         'turquoise-persian-blue':'#57C5C6',
