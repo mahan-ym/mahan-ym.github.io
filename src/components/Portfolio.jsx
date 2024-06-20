@@ -23,10 +23,10 @@ function Portfolio() {
 
                     <Slider {...settings} >
                         <div>
-                            <img src="/images/gallery/footballist1.jpg" alt="Artwork 1" className="object-contain"/>
+                            <img src="/images/gallery/footballist1.jpg" alt="Footballist project image 1"/>
                         </div>
                         <div>
-                            <img src="/images/gallery/footballist2.jpg" alt="Artwork 2" className="object-contain"/>
+                            <img src="/images/gallery/footballist2.jpg" alt="Footballist project image 2"/>
                         </div>
                     </Slider>
 
