@@ -1,14 +1,30 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Home from './components/Home.jsx';
 import Experience from "./components/Experience.jsx";
 import Skills from "./components/Skills.jsx";
+import NeonBackgroundStripe from "./components/background/NeonBackground.jsx";
+import Me from "./components/avatar/Me.jsx";
 
 const App = () => {
+    const [scrollPosition, setScrollPosition] = useState(0);
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            setScrollPosition(scrollY);
+        };
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
   return (
       <>
-        <Home />
-        <Experience />
-        <Skills />
+          <NeonBackgroundStripe scrollPosition={scrollPosition}/>
+          <Me />
+          <Home />
+          <Experience />
+          <Skills />
       </>
   );
 };
