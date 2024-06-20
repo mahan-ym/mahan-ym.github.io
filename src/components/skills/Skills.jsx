@@ -4,7 +4,7 @@ import './skills.css';
 
 function Skills() {
     return (
-        <div className="relative flex flex-col w-screen h-screen ">
+        <div className="relative flex flex-col w-screen ">
             <h1 className="text-4xl md:text-8xl font-tiny font-bold text-white w-full m-4">Skills:</h1>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {Object.entries(skillsData).map(([category, skillsList], index) => (
