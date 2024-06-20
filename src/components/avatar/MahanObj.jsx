@@ -12,7 +12,7 @@ function MahanObj() {
         actions?.greeting.play();
     }, [actions]);
 
-    return <primitive object={scene} scale={3} position={[0, -3, 0]} />;
+    return <primitive object={scene} scale={4.5} position={[0.5, -6, 0]} />;
 }
 
 export default MahanObj;

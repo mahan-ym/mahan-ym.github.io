@@ -5,10 +5,12 @@ import {Canvas} from "@react-three/fiber";
 function MahanObjCanvas() {
     return (
         <Canvas>
-            <hemisphereLight color={"#ffffff"} groundColor={"#000000"} intensity={1} position={ [0, 1, 0] } />
-            <pointLight color={"#F77FBE"} intensity={3} position={ [1, 2, 1] } />
-            <pointLight color={"#57C5C6"} intensity={4} position={ [-2, 2, 1] } />
-            <MahanObj />
+            <hemisphereLight color={"#ffffff"} groundColor={"#000000"} intensity={1} position={[0, 1, 0]}/>
+            <pointLight color={"#F77FBE"} intensity={100} position={[2, -4, 1]}/>
+            <pointLight color={"#57C5C6"} intensity={100} position={[-2, -4, 0]}/>
+            <pointLight color={"#F77FBE"} intensity={30} position={[2, 4, 1]}/>
+            <pointLight color={"#57C5C6"} intensity={30} position={[-2, 4, 0]}/>
+            <MahanObj/>
         </Canvas>
     );
 }
