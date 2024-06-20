@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Home from './components/Home.jsx';
 import Experience from "./components/Experience.jsx";
-import Skills from "./components/Skills.jsx";
+import Skills from "./components/skills/Skills.jsx";
 import NeonBackgroundStripe from "./components/background/NeonBackground.jsx";
 import Me from "./components/avatar/Me.jsx";
 
