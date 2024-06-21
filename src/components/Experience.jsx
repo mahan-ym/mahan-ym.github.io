@@ -8,7 +8,7 @@ function Experience() {
         <div className="relative flex flex-col w-screen ">
             <h1 className="text-4xl md:text-8xl font-tiny font-bold text-white w-full m-4">Experience:</h1>
             {experienceData.industry.map((exp, index) => (
-                <div className={index % 2 === 0 ? "mr-auto m-4" : "ml-auto m-4"}>
+                <div className={index % 2 === 0 ? "xl:mr-auto m-2 xl:m-4 flex flex-col " : "xl:ml-auto m-2 xl-m4 flex flex-col"}>
                     <GradientCard
                         indx={index}
                         position={exp.position}
