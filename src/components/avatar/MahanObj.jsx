@@ -1,10 +1,9 @@
 import {useAnimations, useFBX, useGLTF} from "@react-three/drei";
-import avatarModel from "../../public/model/avatar.glb";
 import React, {useEffect} from "react";
 
 function MahanObj() {
-    const { scene } = useGLTF(avatarModel);
-    const {animations} = useFBX('src/public/animations/greeting.fbx');
+    const { scene } = useGLTF("/model/avatar.glb");
+    const {animations} = useFBX('/animations/greeting.fbx');
     animations[0].name = 'greeting';
     const { actions } = useAnimations(animations, scene);
 
