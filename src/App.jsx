@@ -5,6 +5,7 @@ import Skills from "./components/skills/Skills.jsx";
 import NeonBackgroundStripe from "./components/background/NeonBackground.jsx";
 import Me from "./components/avatar/Me.jsx";
 import Portfolio from "./components/Portfolio.jsx";
+import Education from "./components/Education.jsx";
 
 const App = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -26,6 +27,7 @@ const App = () => {
           <Home />
           <Experience />
           <Skills />
+          <Education />
           <Portfolio />
       </>
   );
