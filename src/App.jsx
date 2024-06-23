@@ -6,6 +6,7 @@ import NeonBackgroundStripe from "./components/background/NeonBackground.jsx";
 import Me from "./components/avatar/Me.jsx";
 import Portfolio from "./components/Portfolio.jsx";
 import Education from "./components/Education.jsx";
+import Publications from "./components/Publications.jsx";
 
 const App = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -28,6 +29,7 @@ const App = () => {
           <Experience />
           <Skills />
           <Education />
+          <Publications />
           <Portfolio />
       </>
   );

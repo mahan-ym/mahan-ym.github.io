@@ -1,6 +1,6 @@
 .skill-container {
     @apply bg-gradient-to-b  from-persian-indigo via-persian-blue to-black
-    shadow-inner shadow-persian-rose text-white p-4 mt-1 rounded-2xl
+    shadow-inner shadow-white text-white p-4 mt-1 rounded-2xl
     grid grid-cols-1 xl:grid-cols-2;
 }
 .skill-card {
@@ -8,9 +8,9 @@
 }
 
 .skill-card img {
-    @apply w-24 md:w-32 m-2;
+    @apply w-16 md:w-20 m-2;
 }
 
 .skill-card p {
-    @apply m-1 text-lg md:text-2xl font-sans text-justify;
+    @apply m-1 text-lg md:text-2xl font-sans text-center;
 }
