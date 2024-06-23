@@ -6,7 +6,7 @@ function Experience() {
 
     return (
         <div className="relative flex flex-col w-screen ">
-            <h1 className="text-4xl md:text-8xl font-tiny font-bold text-white w-full m-4">Experience:</h1>
+            <h1 className="text-4xl md:text-8xl font-orbitron font-bold text-white w-full m-4">Experience:</h1>
             {experienceData.industry.map((exp, index) => (
                 <div className={index % 2 === 0 ? "xl:mr-auto m-2 xl:m-4 flex flex-col " : "xl:ml-auto m-2 xl-m4 flex flex-col"}>
                     <GradientCard

@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        'tiny':['Tiny5']
+        'orbitron':['Orbitron']
       },
       colors: {
         'persian-blue':'#1C39BB',

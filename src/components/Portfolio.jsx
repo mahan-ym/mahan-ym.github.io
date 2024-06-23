@@ -15,7 +15,7 @@ function Portfolio() {
     return (
         <div className="relative w-screen ">
 
-            <h1 className="text-4xl md:text-8xl font-tiny font-bold text-white w-full m-4">Gallery:</h1>
+            <h1 className="text-4xl md:text-8xl font-orbitron font-bold text-white w-full m-4">Gallery:</h1>
             <div
                 className="relative mx-auto border-gray-800 bg-gray-800 border-[16px] rounded-t-xl
                max-w-[320px] md:max-w-[640px] lg:max-w-[800px] xl:max-w-[1024px] aspect-[4/3]">
