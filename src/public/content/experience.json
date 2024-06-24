@@ -41,5 +41,24 @@
     }
   ],
   "academic": [
+    {
+      "project": "Temperature Monitoring System with ARM STM32 Microcontroller",
+      "date": "2020",
+      "length": "3 months",
+      "achievements": [
+        "Implemented a temperature controller on the Microcontroller.",
+        "wrote interactive code which would react to commands from PC Software.",
+        "Developed a monitoring software that monitored the room temperature by connecting to the Microcontroller through a Serial connection."
+      ]
+    },
+    {
+      "project": "Design and Build a wind generation system, estimating near future wind speed based on neural networks - Degree Project",
+      "date": "2022",
+      "length": "6 months",
+      "achievements": [
+        "Built a prototype wind generator and wind speed indicator system.",
+        "Trained the following models for wind speed prediction: OneStep, BaseLine, Linear, Dense, CNN, LSTM."
+      ]
+    }
   ]
 }
