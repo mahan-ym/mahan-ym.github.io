@@ -14,17 +14,17 @@
 }
 
 .g3 {
-    @apply absolute w-3/5 -z-10 aspect-square rounded-full bg-persian-red opacity-20
+    @apply absolute w-3/5 -z-10 aspect-square rounded-full bg-persian-indigo opacity-20
     blur-lg origin-center animate-[moveInCircle_20s_linear_infinite] top-[5-%] left-[5-%]
 }
 
 .g4 {
-    @apply absolute w-3/5 -z-10 aspect-square rounded-full bg-persian-pink opacity-20
+    @apply absolute w-3/5 -z-10 aspect-square rounded-full bg-persian-blue opacity-20
     blur-lg origin-center animate-[moveHorizontal_20s_ease_infinite] top-[5-%] left-[5-%]
 }
 
 .g5 {
-    @apply absolute w-3/5 -z-10 aspect-square rounded-full bg-persian-rose opacity-20
+    @apply absolute w-3/5 -z-10 aspect-square rounded-full bg-fuchsia-800 opacity-20
     blur-lg origin-center animate-[moveInCircle_20s_ease_infinite] top-[5-%] left-[5-%]
 }
 
