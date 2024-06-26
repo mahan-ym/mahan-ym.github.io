@@ -15,7 +15,6 @@ function Publications() {
             .then((data) => {
                 if(data.status === 200) {
                     setBlogs(data.data.items)
-                    setBlogAvatar(data.data.feed.image)
                 }
             }).catch(error => {
                 console.log(error)
