@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SliderComponent from "./SliderComponent.jsx";
 
 function Portfolio() {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const handleImageEnlargeClick = (imageSrc) => {
+        setSelectedImage(imageSrc);
+        setIsModalOpen(true);
+    }
+
+    const handleModalClose = () => {
+        setIsModalOpen(false);
+    }
+
     var settings = {
         dots: false,
         infinite: true,
@@ -14,20 +28,15 @@ function Portfolio() {
 
     return (
         <div className="relative w-screen ">
-
-            <h1 className="text-4xl md:text-8xl font-orbitron font-bold text-white w-full m-4">Gallery:</h1>
+            <h1>Gallery:</h1>
             <div
                 className="relative mx-auto border-gray-800 bg-gray-800 border-[16px] rounded-t-xl
                max-w-[320px] md:max-w-[640px] lg:max-w-[800px] xl:max-w-[1024px] aspect-[4/3]">
                 <div className="rounded-xl overflow-hidden aspect-[4/3]">
 
                     <Slider {...settings} >
-                        <div>
-                            <img src="/images/gallery/footballist1.jpg" alt="Footballist project image 1"/>
-                        </div>
-                        <div>
-                            <img src="/images/gallery/footballist2.jpg" alt="Footballist project image 2"/>
-                        </div>
+                        <SliderComponent imageSrc="/images/gallery/footballist1.jpg" onEnlargeClick={handleImageEnlargeClick}/>
+                        <SliderComponent imageSrc="/images/gallery/footballist2.jpg" onEnlargeClick={handleImageEnlargeClick}/>
                     </Slider>
 
                 </div>
@@ -42,9 +51,15 @@ function Portfolio() {
                 </svg>
             </div>
             <div className="relative mx-auto bg-gradient-to-t from-gray-700 to-gray-900
-
             rounded-b-xl max-w-[88px] md:max-w-[177px] lg:max-w-[221px] xl:max-w-[284px] aspect-[5/2]"></div>
 
+            {isModalOpen && (
+                <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50" onClick={handleModalClose}>
+                    <div className="bg-white p-4 rounded">
+                        <img src={selectedImage} alt="portfolio image"/>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

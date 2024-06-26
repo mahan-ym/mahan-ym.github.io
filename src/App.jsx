@@ -4,7 +4,7 @@ import Experience from "./components/Experience.jsx";
 import Skills from "./components/skills/Skills.jsx";
 import NeonBackgroundStripe from "./components/background/NeonBackground.jsx";
 import Me from "./components/avatar/Me.jsx";
-import Portfolio from "./components/Portfolio.jsx";
+import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import Education from "./components/Education.jsx";
 import Publications from "./components/Publications.jsx";
 
