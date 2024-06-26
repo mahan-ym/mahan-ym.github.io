@@ -60,5 +60,18 @@
         "Trained the following models for wind speed prediction: OneStep, BaseLine, Linear, Dense, CNN, LSTM."
       ]
     }
+  ],
+  "projects": [
+    {
+      "project": "E-Commerce website for pamaro.co",
+      "date": "03/2021 - 12/2021",
+      "length": "10 months",
+      "description": "Pamaro(rebranded as Libertoe) is an ergonomic shoe manufacturer.",
+      "achievements": [
+        "Developed Frontend of the website (e-commerce website, admin dashboard, blog website) with React and next.js",
+        "Developed Backend of the website with Django and used PostgreSQL as Database",
+        "Utilized the powerful GraphQL and use it to handle requests for the website"
+      ]
+    }
   ]
 }
