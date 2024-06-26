@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'orbitron':['Orbitron']
+        'robotoSerif':["Roboto Serif"],
+        'roboto':['Roboto']
       },
       colors: {
         'persian-blue':'#1C39BB',

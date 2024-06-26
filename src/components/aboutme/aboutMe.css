@@ -2,16 +2,8 @@
     @apply bg-black bg-opacity-50 text-white p-4 mt-5 rounded-2xl ;
 }
 
-.about-me h1 {
-    @apply text-4xl md:text-8xl font-orbitron font-bold mb-2;
-}
-
 .about-me p {
-    @apply text-lg md:text-2xl font-sans text-justify;
-}
-
-.about-me h2 {
-    @apply text-2xl md:text-8xl font-orbitron font-bold;
+    @apply text-lg md:text-2xl ml-4
 }
 
 .about-me a {

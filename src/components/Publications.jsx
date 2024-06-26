@@ -40,7 +40,7 @@ function Publications() {
 
     return (
         <div className="relative flex flex-col w-screen">
-            <h1 className="text-4xl md:text-8xl font-orbitron font-bold text-white w-full m-4">Publications:</h1>
+            <h1>Publications:</h1>
             <div className="flex flex-col w-full items-center text-white md:grid md:grid-cols-2 xl:grid-cols-4 gap-4">
                 {blogs && blogs.map((blog) => {
                     return (
@@ -52,7 +52,7 @@ function Publications() {
                            }}>
                             <div className="cursor-pointer bg-gray-900 rounded-xl m-4 shadow-inner shadow-white">
                                 <img src={getBlogImage(blog.description)} alt={blog.title} className="rounded-xl"/>
-                                <h2 className="text-xl md:text-2xl font-bold font-orbitron text-white m-2">{blog.title}</h2>
+                                <h2>{blog.title}</h2>
                                 <p className="text-lg m-2">{new Date(blog.pubDate).toDateString()}</p>
                             </div>
                         </a>

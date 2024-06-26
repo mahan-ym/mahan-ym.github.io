@@ -33,11 +33,11 @@ const GradientCard = (props) => {
             <div className="g3"/>
             <div className="g4"/>
             <div className="g5"/>
-            <h2>{props.position}</h2>
-            <p className={"text-2xl"}>{props.company}</p>
+            <h2 className="ml-0">{props.position}</h2>
+            <p className="company-name">{props.company}</p>
             <p>{props.location}</p>
-            <p>{props.date} - {props.duration}</p>
-            <p className={"text-lg"}>{props.description}</p>
+            <p className="text-lg">{props.date} - {props.duration}</p>
+            <p>{props.description}</p>
             <ul className="list-disc list-inside">
                 {props.achievements.map((achievement, i) => (
                     <li key={i} className="text-balance">{achievement}</li>

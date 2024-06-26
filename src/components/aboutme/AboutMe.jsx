@@ -10,9 +10,9 @@ function AboutMe() {
 
     return (
         <div className="about-me">
-            <h1>About Me</h1>
-            <p>{abstract}</p>
-            <h2 className="mb-4 mt-4">Contact Information</h2>
+            <h1 className="ml-0">About Me</h1>
+            <p className="text-justify">{abstract}</p>
+            <h2 className=" ml-0 text-4xl md:text-6xl">Contact Information</h2>
             <p><FontAwesomeIcon icon={faLocationDot} beat /> Location: {location}</p>
             <p><FontAwesomeIcon icon={faEnvelope} bounce /> Email: <a href={`mailto:${email}`}>{email}</a></p>
 

@@ -5,11 +5,11 @@ import './skills.css';
 function Skills() {
     return (
         <div className="relative flex flex-col w-screen ">
-            <h1 className="text-4xl md:text-8xl font-orbitron font-bold text-white w-full m-4">Skills:</h1>
+            <h1>Skills:</h1>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {Object.entries(skillsData).map(([category, skillsList], index) => (
                 <div className="flex flex-col items-center m-5">
-                    <h2 className="text-2xl md:text-4xl font-orbitron font-bold text-white">{category}:</h2>
+                    <h2>{category}:</h2>
                     <div className="skill-container">
                         {skillsList.map((skill) => (
                             <div className="skill-card">
