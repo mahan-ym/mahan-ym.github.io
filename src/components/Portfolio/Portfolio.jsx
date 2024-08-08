@@ -37,6 +37,9 @@ function Portfolio() {
                     <Slider {...settings} >
                         <SliderComponent imageSrc="/images/gallery/footballist1.jpg" onEnlargeClick={handleImageEnlargeClick}/>
                         <SliderComponent imageSrc="/images/gallery/footballist2.jpg" onEnlargeClick={handleImageEnlargeClick}/>
+                        <SliderComponent imageSrc="/images/gallery/website.jpg" onEnlargeClick={handleImageEnlargeClick}/>
+                        <SliderComponent imageSrc="/images/gallery/pamaro1.jpg" onEnlargeClick={handleImageEnlargeClick}/>
+                        <SliderComponent imageSrc="/images/gallery/pamaro2.jpg" onEnlargeClick={handleImageEnlargeClick}/>
                     </Slider>
 
                 </div>
