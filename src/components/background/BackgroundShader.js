@@ -26,10 +26,10 @@ const WaveMaterial = shaderMaterial(
       varying vec2 vUv;      
 
       vec3 palette(float t) {
-        vec3 a = vec3(0.5, 0.5, 0.5);
+        vec3 a = vec3(0.5, 0.1, 0.1);
         vec3 b = vec3(0.5, 0.5, 0.5);
         vec3 c = vec3(0.0, 0.0, 1.0);
-        vec3 d = vec3(0.25, 0.40, 0.55);
+        vec3 d = vec3(0.35, 0.45, 0.55);
         return a + b * cos(8.28318 * (c * t + d));
       }
 
@@ -41,9 +41,9 @@ const WaveMaterial = shaderMaterial(
         uv = sin(uv * 0.5) - pointer;     
         float d = length(uv) * exp(-length(uv0));
         vec3 col = palette(length(uv0) + time * 0.4);
-        d = sin(d * 8.0 + time) / 10.0;
+        d = sin(d * 20.0 + time) / 17.0;
         d = abs(d);
-        d = pow(0.02 / d, 2.0);
+        d = pow(0.015 / d, 2.0);
         finalColor += col * d;
         gl_FragColor = vec4(finalColor, 1.0);   
       }`
