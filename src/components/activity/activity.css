@@ -1,0 +1,28 @@
+.activity {
+    @apply p-4 mt-5 rounded-2xl ;
+}
+
+.current-activity {
+    @apply z-10 flex items-center justify-center w-10 h-10 rounded-full ring-0 bg-persian-green sm:ring-8 ring-persian-indigo shrink-0;
+    animation: pulse 2s infinite;
+    transform: scale(1);
+}
+
+.normal-activity {
+    @apply z-10 flex items-center justify-center w-10 h-10 rounded-full ring-0 bg-persian-indigo sm:ring-8 ring-persian-blue shrink-0;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.80);
+    }
+
+    70% {
+        transform: scale(1.20);
+    }
+
+    100% {
+        transform: scale(0.80);
+    }
+}

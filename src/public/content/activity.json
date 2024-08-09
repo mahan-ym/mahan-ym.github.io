@@ -1,0 +1,26 @@
+{
+  "PreviousActivity":
+ [
+   {
+    "Date": "14 Mar",
+    "Activity": "Developing TripBi."
+  },
+   {
+     "Date": "12 Jun 2024",
+     "Activity": "Redeveloping This website."
+   }
+ ],
+  "CurrentActivity":
+  [
+    {
+      "Activity": "Studying Blockchain technology and Solidity."
+    }
+  ],
+  "FutureActivity":
+  [
+    {
+      "Date": "21 Sep 2024",
+      "Activity": "Software Engineer Intern at Loop.ai for 6 months."
+    }
+  ]
+}
