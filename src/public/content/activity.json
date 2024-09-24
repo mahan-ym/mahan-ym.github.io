@@ -14,13 +14,19 @@
   [
     {
       "Activity": "Studying Blockchain technology and Solidity."
+    },
+    {
+      "Activity": "Software Engineer Consultant at Loop.ai."
+    },
+    {
+      "Activity": "Studying AI(NN & Deep Learning, ML)"
     }
   ],
   "FutureActivity":
   [
     {
-      "Date": "21 Sep 2024",
-      "Activity": "Software Engineer Intern at Loop.ai for 6 months."
+      "Date": "Future",
+      "Activity": "Studying AI(Adversarial ML, RL)"
     }
   ]
 }
