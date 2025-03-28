@@ -16,6 +16,7 @@ function Activity() {
                         if (index === PreviousActivity.length -1 || index === PreviousActivity.length -2)
                             return (
                                 <TimelineComponent
+                                    key={`prev-${index}`}
                                     index={index}
                                     activity={activity.Activity}
                                     date={activity.Date}
@@ -24,16 +25,18 @@ function Activity() {
                         else if (index === PreviousActivity.length -3)
                             return (
                                 <TimelineComponent
+                                    key={`prev-ellipsis-${index}`}
                                     index={index}
                                     activity={"......"}
                                     date={"..."}
                                 />
                             )
                         else
-                            return <></>
+                            return <React.Fragment key={`prev-empty-${index}`}></React.Fragment>
                     } else {
                         return (
                             <TimelineComponent
+                                key={`prev-${index}`}
                                 index={index}
                                 activity={activity.Activity}
                                 date={activity.Date}
@@ -45,10 +48,11 @@ function Activity() {
                 {CurrentActivity.map((activity, index) => {
                     return (
                         <TimelineComponent
-                            index = {index}
-                            activity = {activity.Activity}
-                            date = {"Now"}
-                            current = {true}
+                            key={`current-${index}`}
+                            index={index}
+                            activity={activity.Activity}
+                            date={"Now"}
+                            current={true}
                         />
                     );
                 })}
@@ -56,9 +60,10 @@ function Activity() {
                 {FutureActivity.map((activity, index) => {
                     return (
                         <TimelineComponent
-                            index = {index}
-                            activity = {activity.Activity}
-                            date = {activity.Date}
+                            key={`future-${index}`}
+                            index={index}
+                            activity={activity.Activity}
+                            date={activity.Date}
                         />
                     );
                 })}

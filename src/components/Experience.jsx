@@ -9,7 +9,7 @@ function Experience() {
             <h1>Experience:</h1>
             <h2>Industry</h2>
             {experienceData.industry.map((exp, index) => (
-                <div className={index % 2 === 0 ? "xl:mr-auto m-2 xl:m-4 flex flex-col " : "xl:ml-auto m-2 xl-m4 flex flex-col"}>
+                <div key={`industry-${index}`} className={index % 2 === 0 ? "xl:mr-auto m-2 xl:m-4 flex flex-col " : "xl:ml-auto m-2 xl:m-4 flex flex-col"}>
                     <GradientCard
                         indx={index}
                         position={exp.position}
@@ -23,7 +23,7 @@ function Experience() {
             ))}
             <h2>Academic</h2>
             {experienceData.academic.map((exp, index) => (
-                <div className={index % 2 === 0 ? "xl:mr-auto m-2 xl:m-4 flex flex-col " : "xl:ml-auto m-2 xl-m4 flex flex-col"}>
+                <div key={`academic-${index}`} className={index % 2 === 0 ? "xl:mr-auto m-2 xl:m-4 flex flex-col " : "xl:ml-auto m-2 xl:m-4 flex flex-col"}>
                     <GradientCard
                         indx={index}
                         position={exp.project}
@@ -34,7 +34,7 @@ function Experience() {
             ))}
             <h2>Projects</h2>
             {experienceData.projects.map((exp, index) => (
-                <div className={index % 2 === 0 ? "xl:mr-auto m-2 xl:m-4 flex flex-col " : "xl:ml-auto m-2 xl-m4 flex flex-col"}>
+                <div key={`project-${index}`} className={index % 2 === 0 ? "xl:mr-auto m-2 xl:m-4 flex flex-col " : "xl:ml-auto m-2 xl:m-4 flex flex-col"}>
                     <GradientCard
                         indx={index}
                         position={exp.project}

@@ -10,8 +10,8 @@ function Education() {
         <div className="relative flex flex-col w-screen ">
             <h1>Education:</h1>
             <div className="flex flex-col w-full items-center lg:justify-around lg:flex-row">
-            {eduData.map((edu) => (
-                <SimpleGradientCard >
+            {eduData.map((edu, index) => (
+                <SimpleGradientCard key={edu.institution + index}>
                     <div className="flex flex-col md:flex-row items-center">
                         <FontAwesomeIcon className="w-1/5 h-1/5 m-3 md:w-1/12 md:h-1/5 md:m-5" icon={faAtom} spin spinReverse />
                         <div className="flex flex-col">
@@ -28,4 +28,3 @@ function Education() {
   }
   
   export default Education
-  
