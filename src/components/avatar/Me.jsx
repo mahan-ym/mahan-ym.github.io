@@ -4,7 +4,7 @@ import MahanObjCanvas from "../avatar/MahanObjCanvas.jsx";
 function Me() {
     return (
         <div className={"relative w-screen h-screen overflow-hidden"}>
-            <div className="relative flex flex-rowitems-center w-full h-full">
+            <div className="flex flex-row w-full h-full">
                 <div className="relative ml-4 xl:w-2/5 w-full h-full content-center">
                     <h1>Mahan Y.T</h1>
                     <h2>Software Engineer</h2>

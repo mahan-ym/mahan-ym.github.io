@@ -1,19 +1,13 @@
 import React from 'react';
 import AboutMe from "./aboutme/AboutMe.jsx";
-import RoomCoverCanvas from "./aboutme/RoomCoverCanvas.jsx";
 
 const Home = () => {
   return (
-      <div className={"relative w-screen h-screen overflow-hidden"}>
-          <div className="relative flex flex-row items-center w-full h-full">
-              <div className="absolute xl:relative -z-10 w-full xl:w-2/5 h-full content-center">
-              <RoomCoverCanvas />
-              </div>
-              <div className="w-full xl:w-3/5 h-full content-center">
-                  <AboutMe/>
-              </div>
-          </div>
-      </div>
+        <div className="relative mx-4 items-center">
+            <div className="content-center">
+                <AboutMe/>
+            </div>
+        </div>
   );
 };
 
