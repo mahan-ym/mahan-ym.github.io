@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import Home from './components/Home.jsx';
 import Experience from "./components/Experience.jsx";
 import Skills from "./components/skills/Skills.jsx";
-import NeonBackgroundStripe from "./components/background/NeonBackground.jsx";
 import Me from "./components/avatar/Me.jsx";
 import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import Education from "./components/Education.jsx";
@@ -23,17 +22,19 @@ const App = () => {
         };
     }, []);
   return (
-      <>
-          <NeonBackgroundStripe scrollPosition={scrollPosition}/>
-          <Me />
-          <Home />
-          <Activity />
-          <Experience />
-          <Skills />
-          <Education />
-          <Publications />
-          <Portfolio />
-      </>
+      <div>
+          <img src="/images/back.png" alt="gradient" className="fixed w-full h-full -z-50 object-cover"/>
+          <div className="mx-2">
+            <Me />
+            <Home />
+            <Activity />
+            <Experience />
+            <Skills />
+            <Education />
+            <Publications />
+            <Portfolio />
+          </div>
+      </div>
   );
 };
 
