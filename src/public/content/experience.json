@@ -8,7 +8,7 @@
       "length": "6 months",
       "description": "Loop.ai provide tools and platforms to integrate AI into businesses with Loop Q and Loop Orchestra.",
       "achievements": [
-        "Implemented an automated ticketing AI agent utilizing LLMs, automating the processing of millions of emails and significantly reducing manual labor.",
+        "Implemented an automated ticketing AI agent utilizing LLMs, automating the processing of millions of emails and reducing manual labor.",
         "Enhanced Loop Orchestra's security plus reducing network traffics by integrating JWT Auth on Nginx.",
         "created and maintained containers for GPU-accelerated AI training, optimizing resource utilization."
       ]

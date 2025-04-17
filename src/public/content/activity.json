@@ -10,14 +10,18 @@
      "Activity": "Redeveloping This website."
    },
    {
-     "Date": "12 Jun 2024",
+    "Date": "Sep 2024",
+    "Activity": "R&D Adversarial ML attacks."
+  },
+   {
+     "Date": "Sep 2024",
      "Activity": "Software Engineer Consultant at Loop.ai."
    }
  ],
   "CurrentActivity":
   [
     {
-      "Activity": "Taking part in AI Agents creation, ML & Deep NN projects, joining Hackathons."
+      "Activity": "Create AI Agents, ML & Deep NN projects, joining Hackathons."
     }
   ],
   "FutureActivity":
