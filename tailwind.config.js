@@ -14,33 +14,32 @@ export default {
     },
     extend: {
       fontFamily: {
-        'robotoSerif':["Roboto Serif"],
-        'roboto':['Roboto']
+        "Figtree": ["Figtree", "system-ui", "Helvetica", "sans-serif"]
       },
       colors: {
-        'persian-blue':'#1C39BB',
-        'turquoise-persian-blue':'#57C5C6',
-        'persian-indigo':'#32127A',
-        'persian-rose':'#FE28A2',
-        'persian-pink':'#F77FBE',
-        'persian-red':'#C81D11',
-        'persian-green':'#00A693',
+        'persian-blue': '#1C39BB',
+        'turquoise-persian-blue': '#57C5C6',
+        'persian-indigo': '#32127A',
+        'persian-rose': '#FE28A2',
+        'persian-pink': '#F77FBE',
+        'persian-red': '#C81D11',
+        'persian-green': '#00A693',
       },
       keyframes: {
         'moveInCircle': {
-          '0%': {transform: 'rotate(0deg)'},
-          '50%': {transform: 'rotate(180deg)'},
-          '100%': {transform: 'rotate(360deg)'},
+          '0%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(180deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
         moveVertical: {
-          '0%': {transform: 'translateY(-50%)'},
-          '50%': {transform: 'translateY(50%)'},
-          '100%': {transform: 'translateY(-50%)'},
+          '0%': { transform: 'translateY(-50%)' },
+          '50%': { transform: 'translateY(50%)' },
+          '100%': { transform: 'translateY(-50%)' },
         },
         moveHorizontal: {
-          '0%': {transform: 'translateX(-50%) translateY(-10%)'},
-          '50%': {transform: 'translateX(50%) translateY(10%)'},
-          '100%': {transform: 'translateX(-50%) translateY(-10%)'},
+          '0%': { transform: 'translateX(-50%) translateY(-10%)' },
+          '50%': { transform: 'translateX(50%) translateY(10%)' },
+          '100%': { transform: 'translateX(-50%) translateY(-10%)' },
         },
       }
     },
