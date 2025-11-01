@@ -1,5 +1,8 @@
 .about-me {
-    @apply bg-black bg-opacity-60 text-white p-4 mt-5 rounded-xl;
+    @apply text-white p-4 mt-5 rounded-xl;
+    background: linear-gradient(135deg, rgba(28, 57, 187, 0.1) 0%, rgba(50, 18, 122, 0.15) 100%);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(87, 197, 198, 0.2);
 }
 
 .about-me p {
