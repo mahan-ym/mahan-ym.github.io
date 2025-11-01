@@ -8,7 +8,7 @@ function Activity() {
 
     return (
         <div className="activity">
-            <h1 className="ml-0">Activity</h1>
+            <h1>Activity</h1>
 
             <ol className="items-center sm:flex m-10">
                 {PreviousActivity.map((activity, index) => {

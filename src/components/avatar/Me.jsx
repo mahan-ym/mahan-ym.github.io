@@ -6,7 +6,7 @@ const MahanObjCanvas = lazy(() => import("../avatar/MahanObjCanvas.jsx"));
 
 function Me() {
     return (
-        <div className={"relative w-screen overflow-hidden"}>
+        <div className={"relative w-full overflow-hidden"}>
             <div className="flex flex-row w-full h-full">
                 <div className="relative ml-5 xl:w-2/5 lg:mt-20 w-full h-full content-center">
                     <AboutMe />
