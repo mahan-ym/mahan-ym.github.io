@@ -1,5 +1,4 @@
 import React from 'react';
-import Home from './components/Home.jsx';
 import Experience from "./components/Experience.jsx";
 import Skills from "./components/skills/Skills.jsx";
 import Me from "./components/avatar/Me.jsx";
@@ -10,17 +9,16 @@ import Activity from "./components/activity/activity.jsx";
 
 const App = () => {
   return (
-      <>
-        <img src="/images/back.png" alt="gradient" className="fixed w-full h-full -z-50 object-cover"/>
-        <Me />
-        <Home />
-        <Activity />
-        <Experience />
-        <Skills />
-        <Education />
-        <Publications />
-        <Portfolio />
-      </>
+    <>
+      <img src="/images/back.png" alt="gradient" className="fixed w-full h-full -z-50 object-cover" />
+      <Me />
+      <Activity />
+      <Experience />
+      <Skills />
+      <Education />
+      <Publications />
+      <Portfolio />
+    </>
   );
 };
 
