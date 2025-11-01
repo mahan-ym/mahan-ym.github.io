@@ -1,0 +1,10 @@
+.portfolio {
+    @apply relative w-full;
+}
+
+.portfolio-container {
+    @apply relative p-4 m-5 rounded-xl;
+    background: linear-gradient(135deg, #1c39bb1a 0%, rgba(50, 18, 122, 0.15) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(87, 197, 198, 0.2);
+}
