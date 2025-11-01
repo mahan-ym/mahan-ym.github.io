@@ -1,29 +1,29 @@
-.skills {
+.publications {
     @apply relative flex flex-col w-full text-white;
 }
 
-.skills-main-container {
+.publications-container {
     @apply flex flex-col p-4 m-5 rounded-xl;
     background: linear-gradient(135deg, rgba(28, 57, 187, 0.1) 0%, rgba(50, 18, 122, 0.15) 100%);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(87, 197, 198, 0.2);
 }
 
-.skill-container {
-    @apply text-white p-4 mt-1 rounded-2xl grid grid-cols-1 xl:grid-cols-2;
+.publications-card {
+    @apply text-white p-4 mt-1 rounded-xl grid grid-cols-1 xl:grid-cols-2 items-center cursor-pointer;
     background: linear-gradient(135deg, rgba(28, 57, 187, 0.1) 0%, rgba(50, 18, 122, 0.15) 100%);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(87, 197, 198, 0.2);
 }
 
-.skill-card {
-    @apply flex flex-col items-center justify-center;
+.publications p {
+    @apply p-1;
 }
 
-.skill-card img {
-    @apply w-16 md:w-10 m-2;
+.publications h2 {
+    @apply font-semibold p-2;
 }
 
-.skill-card p {
-    @apply m-1 text-center;
+.publications img {
+    @apply rounded-2xl object-cover w-full h-48;
 }

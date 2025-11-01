@@ -9,6 +9,6 @@
     border: 1px solid rgba(87, 197, 198, 0.2);
 }
 
-.experience p {
+.education p {
     @apply p-1;
 }
