@@ -1,0 +1,14 @@
+.experience {
+    @apply relative flex flex-col w-screen text-white;
+}
+
+.experience-container {
+    @apply flex flex-col p-4 m-5 rounded-xl;
+    background: linear-gradient(135deg, rgba(28, 57, 187, 0.1) 0%, rgba(50, 18, 122, 0.15) 100%);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(87, 197, 198, 0.2);
+}
+
+.experience p {
+    @apply p-1;
+}
