@@ -1,34 +1,31 @@
 {
-  "PreviousActivity":
- [
-   {
-    "Date": "14 Mar",
-    "Activity": "Developing TripBi."
-  },
-   {
-     "Date": "12 Jun 2024",
-     "Activity": "Redeveloping This website."
-   },
-   {
-    "Date": "Sep 2024",
-    "Activity": "R&D Adversarial ML attacks."
-  },
-   {
-     "Date": "Sep 2024",
-     "Activity": "Software Engineer Consultant at Loop.ai."
-   }
- ],
-  "CurrentActivity":
-  [
+  "PreviousActivity": [
     {
-      "Activity": "Create AI Agents, ML & Deep NN projects, joining Hackathons."
+      "Date": "14 Mar",
+      "Activity": "Developing TripBi."
+    },
+    {
+      "Date": "12 Jun 2024",
+      "Activity": "Redeveloping This website."
+    },
+    {
+      "Date": "Sep 2024",
+      "Activity": "R&D Adversarial ML attacks."
+    },
+    {
+      "Date": "Sep 2024",
+      "Activity": "Software Engineer Consultant at Loop.ai."
     }
   ],
-  "FutureActivity":
-  [
+  "CurrentActivity": [
     {
-      "Date": "Future",
-      "Activity": "Starting internship at Dutch Rose Media."
+      "Activity": "Create AI Agents, ML & Deep NN projects, joining Hackathons."
+    },
+    {
+      "Activity": "AI-Engineering Internship at Dutch Rose Media."
     }
+  ],
+  "FutureActivity": [
+    {}
   ]
 }

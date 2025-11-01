@@ -4,7 +4,7 @@ import './activity.css';
 import TimelineComponent from "./timelineComponent.jsx";
 
 function Activity() {
-    const {PreviousActivity, CurrentActivity, FutureActivity} = activityData;
+    const { PreviousActivity, CurrentActivity, FutureActivity } = activityData;
 
     return (
         <div className="activity">
@@ -13,7 +13,7 @@ function Activity() {
             <ol className="items-center sm:flex m-10">
                 {PreviousActivity.map((activity, index) => {
                     if (PreviousActivity.length > 2) {
-                        if (index === PreviousActivity.length -1 || index === PreviousActivity.length -2)
+                        if (index === PreviousActivity.length - 1 || index === PreviousActivity.length - 2)
                             return (
                                 <TimelineComponent
                                     key={`prev-${index}`}
@@ -22,15 +22,8 @@ function Activity() {
                                     date={activity.Date}
                                 />
                             );
-                        else if (index === PreviousActivity.length -3)
-                            return (
-                                <TimelineComponent
-                                    key={`prev-ellipsis-${index}`}
-                                    index={index}
-                                    activity={"......"}
-                                    date={"..."}
-                                />
-                            )
+                        else if (index === PreviousActivity.length - 3)
+                            return
                         else
                             return <React.Fragment key={`prev-empty-${index}`}></React.Fragment>
                     } else {
@@ -57,7 +50,7 @@ function Activity() {
                     );
                 })}
 
-                {FutureActivity.map((activity, index) => {
+                {FutureActivity.filter(activity => activity.Activity).map((activity, index) => {
                     return (
                         <TimelineComponent
                             key={`future-${index}`}
@@ -67,6 +60,7 @@ function Activity() {
                         />
                     );
                 })}
+
             </ol>
 
         </div>
