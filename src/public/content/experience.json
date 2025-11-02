@@ -1,7 +1,20 @@
 {
   "industry": [
     {
-      "position": "Software Engineering Consultant (Internship)",
+      "position": "AI Software Engineer (Internship)",
+      "company": "Dutch Rose Media",
+      "location": "Netherlands Eindhoven",
+      "date": "10/2025 - 03/2026",
+      "length": "6 months",
+      "description": "Dutch Rose Media builds XR applications. They have big products like Center Parcs",
+      "achievements": [
+        "Creating the AI system and implementing the Unity interface for Center Parcs application with over 1 million users for wildlife and vegetation classification.",
+        "Reducing the company's cloud costs 10x by optimizing AWS services.",
+        "Publish and Development of the Dutch Rose Media Libraries."
+      ]
+    },
+    {
+      "position": "AI Software Engineering Consultant (Internship)",
       "company": "Loop AI Group Cognitive Computing",
       "location": "United States (Remote)",
       "date": "09/2024 - 03/2025",
