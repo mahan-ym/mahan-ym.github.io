@@ -8,7 +8,7 @@ function Me() {
     return (
         <div className={"relative w-full overflow-hidden"}>
             <div className="flex flex-row w-full h-full">
-                <div className="relative ml-5 xl:w-2/5 lg:mt-20 w-full h-full content-center">
+                <div className="relative m-5 md:ml-5 xl:w-2/5 lg:mt-20 w-full h-full content-center">
                     <AboutMe />
                 </div>
                 <div className="absolute xl:relative -z-10  xl:w-3/5 w-full h-screen">

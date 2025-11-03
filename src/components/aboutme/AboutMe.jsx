@@ -15,12 +15,12 @@ function AboutMe() {
             <h1 className='mt-2'>About Me</h1>
             <p className="text-justify">{abstract}</p>
             <h2 className="text-2xl mt-2 md:text-4xl">Contact Information</h2>
-            <p><FontAwesomeIcon icon={faLocationDot} beat /> Location: {location}</p>
-            <p><FontAwesomeIcon icon={faEnvelope} beat /> Email: <a href={`mailto:${email}`}>{email}</a></p>
+            <p><FontAwesomeIcon icon={faLocationDot} /> Location: {location}</p>
+            <p><FontAwesomeIcon icon={faEnvelope} /> Email: <a href={`mailto:${email}`}>{email}</a></p>
 
-            <p><FontAwesomeIcon icon={faPhone} beat /> Phone: {phone}</p>
-            <p><FontAwesomeIcon icon={faLinkedin} beat /> LinkedIn: <a href={linkedIn}>{linkedIn}</a></p>
-            <p><FontAwesomeIcon icon={faGithub} beat /> GitHub: <a href={github}>{github}</a></p>
+            <p><FontAwesomeIcon icon={faPhone} /> Phone: {phone}</p>
+            <p><FontAwesomeIcon icon={faLinkedin} /> LinkedIn: <a href={linkedIn}>{linkedIn}</a></p>
+            <p><FontAwesomeIcon icon={faGithub} /> GitHub: <a href={github}>{github}</a></p>
         </div>
     );
 }
