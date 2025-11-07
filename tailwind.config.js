@@ -27,16 +27,20 @@ export default {
       },
       keyframes: {
         moveVertical: {
-          '0%': { transform: 'translateY(-1%)' },
-          '50%': { transform: 'translateY(1%)' },
-          '100%': { transform: 'translateY(-%)' },
+          '0%': { transform: 'translateY(-50%)' },
+          '50%': { transform: 'translateY(50%)' },
+          '100%': { transform: 'translateY(-50%)' },
         },
         moveHorizontal: {
-          '0%': { transform: 'translateX(-3%) translateY(-1%)' },
-          '50%': { transform: 'translateX(3%) translateY(1%)' },
-          '100%': { transform: 'translateX(-3%) translateY(-1%)' },
+          '0%': { transform: 'translateX(-30%) translateY(-10%)' },
+          '50%': { transform: 'translateX(30%) translateY(10%)' },
+          '100%': { transform: 'translateX(-30%) translateY(-10%)' },
         },
-      }
+        pulse: {
+          '0%, 100%': { opacity: '0.3' },
+          '50%': { opacity: '0.5' },
+        },
+      },
     },
   },
   plugins: [],
