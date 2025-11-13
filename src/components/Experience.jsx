@@ -23,17 +23,6 @@ function Experience() {
                             achievements={exp.achievements} />
                     </div>
                 ))}
-                <h2>Academic</h2>
-                {experienceData.academic.map((exp, index) => (
-                    <div key={`academic-${index}`} className={index % 2 === 0 ? "xl:mr-auto m-2 xl:m-4 flex flex-col " : "xl:ml-auto m-2 xl:m-4 flex flex-col"}>
-                        <GradientCard
-                            indx={index}
-                            position={exp.project}
-                            date={exp.date}
-                            duration={exp.length}
-                            achievements={exp.achievements} />
-                    </div>
-                ))}
                 <h2>Projects</h2>
                 {experienceData.projects.map((exp, index) => (
                     <div key={`project-${index}`} className={index % 2 === 0 ? "xl:mr-auto m-2 xl:m-4 flex flex-col " : "xl:ml-auto m-2 xl:m-4 flex flex-col"}>
