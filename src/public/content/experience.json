@@ -42,7 +42,7 @@
     {
       "position": "SDK Developer",
       "company": "Metrix",
-      "location": "IRAN",
+      "location": "Iran",
       "date": "08/2021 - 04/2022",
       "length": "9 months",
       "description": "Metrix is an analytics SDK for mobile attribution, analytics, and fraud prevention.",
@@ -57,7 +57,7 @@
     {
       "position": "Software Engineer",
       "company": "JDEVS",
-      "location": "IRAN",
+      "location": "Iran",
       "date": "11/2018 - 08/2021",
       "length": "2 Years + 10 Months",
       "description": "JDEVS manufactures UPSs, Inverters, Chargers, and Industrial monitoring systems.",
@@ -66,17 +66,7 @@
       ]
     }
   ],
-  "academic": [
-    {
-      "project": "Temperature Monitoring System with ARM STM32 Microcontroller",
-      "date": "2020",
-      "length": "3 months",
-      "achievements": [
-        "Implemented a temperature controller on the Microcontroller.",
-        "wrote interactive code which would react to commands from PC Software.",
-        "Developed a monitoring software that monitored the room temperature by connecting to the Microcontroller through a Serial connection."
-      ]
-    },
+  "projects": [
     {
       "project": "Design and Build a wind generation system, estimating near future wind speed based on neural networks - Degree Project",
       "date": "2022",
@@ -85,9 +75,7 @@
         "Built a prototype wind generator and wind speed indicator system.",
         "Trained the following models for wind speed prediction: OneStep, BaseLine, Linear, Dense, CNN, LSTM."
       ]
-    }
-  ],
-  "projects": [
+    },
     {
       "project": "E-Commerce website for pamaro.co",
       "date": "03/2021 - 12/2021",

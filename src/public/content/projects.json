@@ -1,0 +1,94 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Dutch Rose Media- Dutch Design Week",
+            "description": "",
+            "images": [
+                "/images/gallery/dutch-rose/dutchrose-ddw1.jpg",
+                "/images/gallery/dutch-rose/dutchrose-ddw2.jpg",
+                "/images/gallery/dutch-rose/dutchrose-ddw3.jpg",
+                "/images/gallery/dutch-rose/dutchrose-ddw4.jpg",
+                "/images/gallery/dutch-rose/dutchrose-ddw5.jpg"
+            ],
+            "tags": [
+                "Presentation",
+                "Crowd management",
+                "Team work",
+                "Crisis management"
+            ],
+            "link": ""
+        },
+        {
+            "id": 2,
+            "title": "Loop AI-University of Trieste Project",
+            "description": "",
+            "images": [
+                "/images/gallery/loopai1.jpg",
+                "/images/gallery/loopai2.jpg",
+                "/images/gallery/loopai3.jpg"
+            ],
+            "tags": [
+                "Gradio",
+                "LLMs (LLama2)",
+                "FastAPI",
+                "Python",
+                "Celery",
+                "MongoDB",
+                "MLFlow",
+                "Docker"
+            ],
+            "link": ""
+        },
+        {
+            "id": 3,
+            "title": "2nd Brain",
+            "description": "2nd Brain is an AI-powered personal knowledge management system that leverages LangGraph and Qdrant to create a dynamic memory system. It utilizes AI agents to autonomously organize, retrieve, and interact with user data, enhancing productivity and information accessibility.",
+            "images": [
+                "/images/gallery/2ndbrain1.jpg"
+            ],
+            "tags": [
+                "Web Development",
+                "LangGraph",
+                "Qdrant",
+                "MCP",
+                "AI Agents",
+                "Next.js",
+                "FastAPI",
+                "Python"
+            ],
+            "link": "https://github.com/mahan-ym/2nd-brain"
+        },
+        {
+            "id": 4,
+            "title": "Personal Portfolio Website",
+            "description": "Interactive portfolio website showcasing projects, skills, and professional experience with 3D elements.",
+            "images": [
+                "/images/gallery/my_website.jpg"
+            ],
+            "tags": [
+                "Web Development",
+                "3D Graphics",
+                "Three.js",
+                "React.js"
+            ],
+            "link": "https://mahan-ym.com"
+        },
+        {
+            "id": 5,
+            "title": "Footballist application",
+            "description": "A football analytics and management platform featuring real-time stats.",
+            "images": [
+                "/images/gallery/footballist2.jpg",
+                "/images/gallery/footballist1.jpg"
+            ],
+            "tags": [
+                "Android",
+                "Kotlin",
+                "Jetpack Compose",
+                "Firebase"
+            ],
+            "link": "https://youtu.be/dh97cBzMT68?si=thFGP8uO3dFGETFl"
+        }
+    ]
+}
