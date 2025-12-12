@@ -10,7 +10,7 @@
 }
 
 .skill-container {
-    @apply text-white p-4 mt-1 rounded-2xl grid grid-cols-1 xl:grid-cols-2;
+    @apply text-white p-4 mt-1 rounded-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5;
     background: linear-gradient(135deg, rgba(28, 57, 187, 0.1) 0%, rgba(50, 18, 122, 0.15) 100%);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(87, 197, 198, 0.2);

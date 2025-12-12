@@ -1,5 +1,5 @@
 {
-  "Frontend": [
+  "Programming": [
     {
       "name": "HTML5",
       "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
@@ -13,12 +13,20 @@
       "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
     },
     {
+      "name": "TypeScript",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+    },
+    {
       "name": "React",
       "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
     },
     {
+      "name": "Next.js",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+    },
+    {
       "name": "Three.js",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg"
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg"
     },
     {
       "name": "Bootstrap",
@@ -27,12 +35,6 @@
     {
       "name": "Tailwind CSS",
       "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-    }
-  ],
-  "Backend": [
-    {
-      "name": "Solidity",
-      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg"
     },
     {
       "name": "Python",
@@ -43,15 +45,13 @@
       "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
     },
     {
+      "name": "FastAPI",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
+    },
+    {
       "name": "GraphQL",
       "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg"
     },
-    {
-      "name": "Go",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"
-    }
-  ],
-  "Tools": [
     {
       "name": "Git",
       "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
@@ -79,28 +79,116 @@
     {
       "name": "SQLite",
       "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+    },
+    {
+      "name": "Redis",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg"
     }
   ],
-  "Mobile": [
+  "AI": [
     {
-      "name": "Android",
-      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg"
+      "name": "GPT",
+      "icon": "/images/icons/openai.svg"
     },
     {
-      "name": "Dart",
-      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg"
+      "name": "Gemini",
+      "icon": "/images/icons/gemini.svg"
     },
     {
-      "name": "Flutter",
-      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
+      "name": "LLama",
+      "icon": "/images/icons/meta.svg"
     },
     {
-      "name": "Java",
-      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+      "name": "Ollama",
+      "icon": "/images/icons/ollama.svg"
     },
     {
-      "name": "Kotlin",
-      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
+      "name": "Mistral",
+      "icon": "/images/icons/mistral.svg"
+    },
+    {
+      "name": "Hugging Face",
+      "icon": "/images/icons/huggingface.svg"
+    },
+    {
+      "name": "Eleven Labs",
+      "icon": "/images/icons/elevenlabs.svg"
+    },
+    {
+      "name": "Kling AI",
+      "icon": "/images/icons/kling.svg"
+    },
+    {
+      "name": "Pytorch",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
+    },
+    {
+      "name": "TensorFlow",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+    },
+    {
+      "name": "OpenCV",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg"
+    },
+    {
+      "name": "ML-Flow",
+      "icon": "/images/icons/mlflow.svg"
+    },
+    {
+      "name": "Numpy",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
+    },
+    {
+      "name": "Pandas",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+    },
+    {
+      "name": "Qdrant",
+      "icon": "/images/icons/qdrant.svg"
+    },
+    {
+      "name": "n8n",
+      "icon": "/images/icons/n8n.svg"
+    },
+    {
+      "name": "AWS",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+    },
+    {
+      "name": "Azure",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
+    },
+    {
+      "name": "Terraform",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg"
+    },
+    {
+      "name": "LangChain",
+      "icon": "/images/icons/langgraph.svg"
+    },
+    {
+      "name": "LangGraph",
+      "icon": "/images/icons/langgraph.svg"
+    },
+    {
+      "name": "ADK",
+      "icon": "/images/icons/adk.png"
+    },
+    {
+      "name": "MCP",
+      "icon": "/images/icons/mcp.svg"
+    },
+    {
+      "name": "A2A",
+      "icon": "/images/icons/a2a.svg"
+    },
+    {
+      "name": "MinIO",
+      "icon": "/images/icons/minio.svg"
     }
   ]
 }

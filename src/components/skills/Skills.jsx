@@ -7,7 +7,7 @@ function Skills() {
         <div className="skills">
             <div className="skills-main-container">
                 <h1>Skills:</h1>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 gap-4">
                     {Object.entries(skillsData).map(([category, skillsList], index) => (
                         <div className="flex flex-col items-center m-5" key={category}>
                             <h2>{category}:</h2>
