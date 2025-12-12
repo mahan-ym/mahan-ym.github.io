@@ -11,9 +11,6 @@ import './App.css';
 const App = () => {
   return (
     <>
-      <Suspense fallback={<div></div>}>
-        <img src="/images/back.jpeg" alt="gradient" className="fixed w-full h-full -z-50 object-cover" loading="lazy" />
-      </Suspense>
       <div className="background-div"></div>
       <Me />
       <Activity />

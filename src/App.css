@@ -1,6 +1,8 @@
 .background-div {
-    @apply fixed w-full h-full -z-40 object-cover bg-gradient-to-r;
-    position: relative;
+    @apply fixed w-full h-full -z-40;
+    background: repeating-linear-gradient(135deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 10px, transparent 10px, transparent 14px),
+        repeating-linear-gradient(22.5deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 10px, transparent 10px, transparent 14px),
+        linear-gradient(to right, #536976, #292E49);
     overflow: visible;
 }
 
@@ -9,7 +11,7 @@
     position: fixed;
     top: 0;
     left: -100px;
-    width: 40%;
+    width: 30%;
     height: 100%;
     background: linear-gradient(to right, rgba(0, 255, 255, 0.4), transparent);
     filter: blur(90px);
@@ -22,7 +24,7 @@
     position: fixed;
     top: 0;
     right: -100px;
-    width: 40%;
+    width: 30%;
     height: 100%;
     background: linear-gradient(to left, rgba(255, 0, 255, 0.4), transparent);
     filter: blur(90px);
