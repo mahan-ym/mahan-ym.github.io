@@ -1,33 +1,74 @@
-.background-div {
-    @apply fixed w-full h-full -z-40;
-    background: repeating-linear-gradient(135deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 10px, transparent 10px, transparent 14px),
-        repeating-linear-gradient(22.5deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 10px, transparent 10px, transparent 14px),
-        linear-gradient(to right, #536976, #292E49);
-    overflow: visible;
+.bg-wrap {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: #06080f;
+    overflow: hidden;
+    pointer-events: none;
 }
 
-.background-div::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: -100px;
-    width: 30%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 255, 255, 0.4), transparent);
-    filter: blur(90px);
+/* Orbs are absolute inside the fixed container — fills the viewport */
+.bg-orb {
+    position: absolute;
+    border-radius: 50%;
     pointer-events: none;
-    z-index: -49;
+    filter: blur(70px);
 }
 
-.background-div::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    right: -100px;
-    width: 30%;
-    height: 100%;
-    background: linear-gradient(to left, rgba(255, 0, 255, 0.4), transparent);
-    filter: blur(90px);
-    pointer-events: none;
-    z-index: -49;
+.bg-orb-1 {
+    width: 70%;
+    height: 70%;
+    top: -25%;
+    left: -25%;
+    background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.8) 0%, transparent 65%);
+    animation: drift-1 18s ease-in-out infinite;
+}
+
+.bg-orb-2 {
+    width: 65%;
+    height: 65%;
+    bottom: -25%;
+    right: -25%;
+    background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.75) 0%, transparent 65%);
+    animation: drift-2 22s ease-in-out infinite;
+}
+
+.bg-orb-3 {
+    width: 55%;
+    height: 55%;
+    top: 15%;
+    right: -10%;
+    background: radial-gradient(ellipse at center, rgba(6, 182, 212, 0.6) 0%, transparent 65%);
+    animation: drift-3 28s ease-in-out infinite;
+}
+
+.bg-orb-4 {
+    width: 50%;
+    height: 50%;
+    bottom: 5%;
+    left: -5%;
+    background: radial-gradient(ellipse at center, rgba(168, 85, 247, 0.65) 0%, transparent 65%);
+    animation: drift-4 24s ease-in-out infinite;
+}
+
+@keyframes drift-1 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33%       { transform: translate(10%, 14%) scale(1.1); }
+    66%       { transform: translate(-5%, 7%) scale(0.94); }
+}
+
+@keyframes drift-2 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33%       { transform: translate(-10%, -14%) scale(1.08); }
+    66%       { transform: translate(6%, -7%) scale(0.96); }
+}
+
+@keyframes drift-3 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50%       { transform: translate(-15%, 12%) scale(1.12); }
+}
+
+@keyframes drift-4 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50%       { transform: translate(12%, -10%) scale(1.08); }
 }

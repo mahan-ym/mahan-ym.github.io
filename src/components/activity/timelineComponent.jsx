@@ -11,14 +11,14 @@ function TimelineComponent(props) {
                     <FontAwesomeIcon className="w-4.5 h-4.5" icon={faCalendarDays} />
                 </div>
 
-                <div className="hidden sm:flex w-full bg-turquoise-persian-blue h-0.5 "></div>
+                <div className="hidden sm:flex w-full h-0.5" style={{ background: 'linear-gradient(to right, rgba(52,211,153,0.8), rgba(52,211,153,0.2))' }}></div>
             </div>
 
             <div className="mt-3 sm:pe-8">
                 <div key={props.index}>
                     <h3 className="text-lg font-semibold text-white">{props.activity}</h3>
                     <time
-                        className="block mb-2 text-sm font-normal leading-none text-turquoise-persian-blue">
+                        className="block mb-2 text-sm font-normal leading-none" style={{ color: '#34d399' }}>
                         {props.date}
                     </time>
                 </div>

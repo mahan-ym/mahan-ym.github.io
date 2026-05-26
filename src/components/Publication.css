@@ -3,27 +3,41 @@
 }
 
 .publications-container {
-    @apply flex flex-col p-4 m-5 rounded-xl;
-    background: linear-gradient(135deg, rgba(28, 57, 187, 0.1) 0%, rgba(50, 18, 122, 0.15) 100%);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(87, 197, 198, 0.2);
+    @apply flex flex-col p-6 m-5 rounded-2xl;
+    background: linear-gradient(135deg, rgba(146, 64, 14, 0.38) 0%, rgba(161, 98, 7, 0.35) 100%);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(251, 191, 36, 0.45);
+    box-shadow: 0 8px 60px rgba(245, 158, 11, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.publications-container h1 {
+    background: linear-gradient(135deg, #fcd34d, #fb923c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .publications-card {
-    @apply text-white p-4 mt-1 rounded-xl grid grid-cols-1 xl:grid-cols-2 items-center cursor-pointer;
-    background: linear-gradient(135deg, rgba(28, 57, 187, 0.1) 0%, rgba(50, 18, 122, 0.15) 100%);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(87, 197, 198, 0.2);
+    @apply text-white p-4 rounded-xl cursor-pointer transition-all duration-300;
+    background: rgba(10, 6, 2, 0.45);
+    border: 1px solid rgba(251, 191, 36, 0.25);
+}
+
+.publications-card:hover {
+    border-color: rgba(251, 191, 36, 0.6);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.25);
+    background: rgba(146, 64, 14, 0.25);
 }
 
 .publications p {
-    @apply p-1;
+    @apply p-1 text-amber-100;
 }
 
 .publications h2 {
-    @apply font-semibold p-2;
+    @apply font-semibold p-2 text-amber-100;
 }
 
 .publications img {
-    @apply rounded-2xl object-cover w-full h-48;
+    @apply rounded-xl object-cover w-full h-48;
 }

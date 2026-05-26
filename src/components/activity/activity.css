@@ -1,31 +1,39 @@
 .activity {
-    @apply p-4 m-5 rounded-xl;
-    background: linear-gradient(135deg, rgba(28, 57, 187, 0.1) 0%, rgba(50, 18, 122, 0.15) 100%);
+    @apply p-6 m-5 rounded-2xl;
+    background: linear-gradient(135deg, rgba(13, 148, 136, 0.38) 0%, rgba(16, 185, 129, 0.35) 100%);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(87, 197, 198, 0.2);
+    border: 1px solid rgba(52, 211, 153, 0.45);
+    box-shadow: 0 8px 60px rgba(20, 184, 166, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.activity h1 {
+    background: linear-gradient(135deg, #2dd4bf, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .current-activity {
-    @apply z-10 flex items-center justify-center w-10 h-10 rounded-full ring-0 bg-persian-green sm:ring-8 ring-persian-indigo shrink-0;
-    animation: pulse 2s infinite;
-    transform: scale(1);
+    @apply z-10 flex items-center justify-center w-10 h-10 rounded-full shrink-0;
+    background: linear-gradient(135deg, #2dd4bf, #34d399);
+    box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.2), 0 0 20px rgba(52, 211, 153, 0.45);
+    animation: teal-glow-pulse 2.2s ease-in-out infinite;
 }
 
 .normal-activity {
-    @apply z-10 flex items-center justify-center w-10 h-10 rounded-full ring-0 bg-persian-indigo sm:ring-8 ring-persian-blue shrink-0;
+    @apply z-10 flex items-center justify-center w-10 h-10 rounded-full shrink-0;
+    background: rgba(20, 184, 166, 0.35);
+    border: 2px solid rgba(52, 211, 153, 0.55);
+    box-shadow: 0 0 10px rgba(52, 211, 153, 0.15);
 }
 
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.80);
+@keyframes teal-glow-pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.2), 0 0 16px rgba(52, 211, 153, 0.35);
     }
-
-    70% {
-        transform: scale(1.20);
-    }
-
-    100% {
-        transform: scale(0.80);
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(52, 211, 153, 0.1), 0 0 28px rgba(52, 211, 153, 0.55);
     }
 }

@@ -2,25 +2,37 @@ import React from 'react';
 import aboutMeData from '../../public/content/aboutme.json';
 import './aboutMe.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function AboutMe() {
-    const { abstract, location, email, phone, linkedIn, github } = aboutMeData;
+    const { abstract, location, email, linkedIn, github } = aboutMeData;
 
     return (
         <div className="about-me">
-            <h1>Mahan Yarmohammad Tajari</h1>
-            <h2>AI Engineer</h2>
-            <h1 className='mt-2'>About Me</h1>
-            <p className="text-justify">{abstract}</p>
-            <h2 className="text-2xl mt-2 md:text-4xl">Contact Information</h2>
-            <p><FontAwesomeIcon icon={faLocationDot} /> Location: {location}</p>
-            <p><FontAwesomeIcon icon={faEnvelope} /> Email: <a href={`mailto:${email}`}>{email}</a></p>
-
-            <p><FontAwesomeIcon icon={faPhone} /> Phone: {phone}</p>
-            <p><FontAwesomeIcon icon={faLinkedin} /> LinkedIn: <a href={linkedIn}>{linkedIn}</a></p>
-            <p><FontAwesomeIcon icon={faGithub} /> GitHub: <a href={github}>{github}</a></p>
+            <div className="about-me-header">
+                <h1 className="hero-name">Mahan Yarmohammad Tajari</h1>
+                <span className="role-badge">AI Engineer</span>
+            </div>
+            <p className="about-me-abstract text-justify">{abstract}</p>
+            <div className="contact-grid">
+                <a href={`mailto:${email}`} className="contact-item">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    <span>{email}</span>
+                </a>
+                <span className="contact-item">
+                    <FontAwesomeIcon icon={faLocationDot} />
+                    <span>{location}</span>
+                </span>
+                <a href={linkedIn} target="_blank" rel="noopener noreferrer" className="contact-item contact-item--social">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                    <span>LinkedIn</span>
+                </a>
+                <a href={github} target="_blank" rel="noopener noreferrer" className="contact-item contact-item--social">
+                    <FontAwesomeIcon icon={faGithub} />
+                    <span>GitHub</span>
+                </a>
+            </div>
         </div>
     );
 }

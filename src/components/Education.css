@@ -3,12 +3,46 @@
 }
 
 .education-container {
-    @apply flex flex-col p-4 m-5 rounded-xl;
-    background: linear-gradient(135deg, rgba(28, 57, 187, 0.1) 0%, rgba(50, 18, 122, 0.15) 100%);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(87, 197, 198, 0.2);
+    @apply flex flex-col p-6 m-5 rounded-2xl;
+    background: linear-gradient(135deg, rgba(157, 23, 77, 0.38) 0%, rgba(131, 24, 67, 0.35) 100%);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(251, 113, 133, 0.45);
+    box-shadow: 0 8px 60px rgba(244, 63, 94, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.education-container h1 {
+    background: linear-gradient(135deg, #fda4af, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .education p {
     @apply p-1;
+}
+
+.education .text-container {
+    border-color: rgba(251, 113, 133, 0.35);
+    box-shadow: 0 4px 32px rgba(244, 63, 94, 0.2);
+}
+
+.education .text-container:hover {
+    border-color: rgba(251, 113, 133, 0.65);
+    box-shadow: 0 8px 48px rgba(244, 63, 94, 0.25);
+}
+
+.education .g1 {
+    background: radial-gradient(circle, rgba(251, 113, 133, 0.8), rgba(244, 63, 94, 0.4));
+}
+
+.education .g2 {
+    background: radial-gradient(circle, rgba(244, 114, 182, 0.9), rgba(219, 39, 119, 0.5));
+}
+
+.education .g3 {
+    background: radial-gradient(circle, rgba(190, 24, 93, 0.6), transparent);
+}
+
+.education .company-name {
+    color: #fda4af;
 }

@@ -1,31 +1,41 @@
 .text-container {
-    @apply text-white w-fit md:max-w-7xl p-5 relative rounded-xl overflow-hidden;
-    background: linear-gradient(135deg, rgba(28, 57, 187, 0.1) 0%, rgba(50, 18, 122, 0.15) 100%);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(87, 197, 198, 0.2);
+    @apply text-white w-fit md:max-w-3xl p-6 relative rounded-2xl overflow-hidden;
+    background: rgba(15, 20, 50, 0.75);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(129, 140, 248, 0.3);
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.35);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-container:hover {
+    border-color: rgba(129, 140, 248, 0.6);
+    box-shadow: 0 8px 48px rgba(99, 102, 241, 0.2);
 }
 
 .g1 {
-    @apply absolute w-2/5 -z-10 aspect-square rounded-full bg-persian-pink opacity-40 blur-lg animate-[moveVertical_40s_infinite] top-[25%] left-[50%]
+    @apply absolute w-2/5 -z-10 aspect-square rounded-full opacity-30 blur-xl animate-[moveVertical_40s_infinite] top-[25%] left-[50%];
+    background: radial-gradient(circle, rgba(192, 132, 252, 0.8), rgba(139, 92, 246, 0.4));
 }
 
 .g2 {
-    @apply absolute w-2/5 -z-10 aspect-square rounded-full bg-persian-blue opacity-80 blur-lg origin-center animate-[moveHorizontal_40s_infinite] top-[15%] left-[15%]
+    @apply absolute w-2/5 -z-10 aspect-square rounded-full opacity-50 blur-xl origin-center animate-[moveHorizontal_40s_infinite] top-[15%] left-[15%];
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.9), rgba(67, 56, 202, 0.5));
 }
 
 .g3 {
-    @apply absolute w-4/5 -z-10 aspect-square rounded-full bg-persian-indigo opacity-80 blur-lg origin-center animate-[pulse_20s_infinite] top-[-50%] left-[0%]
+    @apply absolute w-4/5 -z-10 aspect-square rounded-full opacity-40 blur-2xl origin-center animate-[pulse_20s_infinite] top-[-50%] left-[0%];
+    background: radial-gradient(circle, rgba(109, 40, 217, 0.6), transparent);
 }
 
-
 .text-container p {
-    @apply ml-2 text-lg md:text-xl
+    @apply ml-2 text-lg md:text-xl text-slate-200;
 }
 
 .text-container ul {
-    @apply ml-3 text-lg md:text-xl
+    @apply ml-3 text-lg md:text-xl text-slate-200;
 }
 
 .company-name {
-    @apply text-2xl md:text-3xl font-bold
+    @apply text-2xl md:text-3xl font-bold;
+    color: #c4b5fd;
 }
