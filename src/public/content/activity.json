@@ -1,36 +1,40 @@
 {
-  "PreviousActivity": [
+  "activities": [
     {
-      "Date": "14 Mar",
-      "Activity": "Developing TripBi."
+      "date": "Mar 2024",
+      "activity": "Developing TripBi",
+      "type": "project"
     },
     {
-      "Date": "12 Jun 2024",
-      "Activity": "Redeveloping This website."
+      "date": "Jun 2024",
+      "activity": "Redeveloping this website",
+      "type": "project"
     },
     {
-      "Date": "Sep 2024",
-      "Activity": "R&D Adversarial ML attacks."
+      "date": "Sep 2024",
+      "activity": "R&D on Adversarial ML attacks",
+      "type": "research"
     },
     {
-      "Date": "Sep 2024",
-      "Activity": "Software Engineer Consultant at Loop.ai."
+      "date": "Sep 2024",
+      "activity": "Software Engineer Consultant at Loop.ai",
+      "type": "work"
     },
     {
-      "Date": "Oct 2025 - Mar 2026",
-      "Activity": "AI-Engineering Internship at Dutch Rose Media."
+      "date": "Oct 2025 - Mar 2026",
+      "activity": "AI-Engineering Internship at Dutch Rose Media",
+      "type": "work"
     },
     {
-      "Date": "April 2026",
-      "Activity": "Graduate From University of Padova in M.Sc. of ICT for internet and Multimedia."
+      "date": "April 2026",
+      "activity": "M.Sc. in ICT for Internet and Multimedia — University of Padova",
+      "type": "education"
+    },
+    {
+      "date": "Now",
+      "activity": "AI Engineer at NextPax",
+      "type": "work",
+      "current": true
     }
-  ],
-  "CurrentActivity": [
-    {
-      "Activity": "AI Engineer at NextPax."
-    }
-  ],
-  "FutureActivity": [
-    {}
   ]
 }

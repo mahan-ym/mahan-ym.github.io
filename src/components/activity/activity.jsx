@@ -4,65 +4,24 @@ import './activity.css';
 import TimelineComponent from "./timelineComponent.jsx";
 
 function Activity() {
-    const { PreviousActivity, CurrentActivity, FutureActivity } = activityData;
+    const { activities } = activityData;
+    const recent = activities.slice(-4);
 
     return (
         <div className="activity">
             <h1>Activity</h1>
-
-            <ol className="items-center sm:flex m-10">
-                {PreviousActivity.map((activity, index) => {
-                    if (PreviousActivity.length > 2) {
-                        if (index === PreviousActivity.length - 1 || index === PreviousActivity.length - 2)
-                            return (
-                                <TimelineComponent
-                                    key={`prev-${index}`}
-                                    index={index}
-                                    activity={activity.Activity}
-                                    date={activity.Date}
-                                />
-                            );
-                        else if (index === PreviousActivity.length - 3)
-                            return
-                        else
-                            return <React.Fragment key={`prev-empty-${index}`}></React.Fragment>
-                    } else {
-                        return (
-                            <TimelineComponent
-                                key={`prev-${index}`}
-                                index={index}
-                                activity={activity.Activity}
-                                date={activity.Date}
-                            />
-                        );
-                    }
-                })}
-
-                {CurrentActivity.map((activity, index) => {
-                    return (
-                        <TimelineComponent
-                            key={`current-${index}`}
-                            index={index}
-                            activity={activity.Activity}
-                            date={"Now"}
-                            current={true}
-                        />
-                    );
-                })}
-
-                {FutureActivity.filter(activity => activity.Activity).map((activity, index) => {
-                    return (
-                        <TimelineComponent
-                            key={`future-${index}`}
-                            index={index}
-                            activity={activity.Activity}
-                            date={activity.Date}
-                        />
-                    );
-                })}
-
+            <ol className="timeline">
+                {recent.map((item, index) => (
+                    <TimelineComponent
+                        key={index}
+                        activity={item.activity}
+                        date={item.date}
+                        type={item.type}
+                        current={item.current || false}
+                        isLast={index === recent.length - 1}
+                    />
+                ))}
             </ol>
-
         </div>
     );
 }

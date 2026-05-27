@@ -1,27 +1,46 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faGraduationCap, faCode, faFlask } from "@fortawesome/free-solid-svg-icons";
 
-function TimelineComponent(props) {
+const typeIcons = {
+    work: faBriefcase,
+    education: faGraduationCap,
+    project: faCode,
+    research: faFlask,
+};
+
+const typeLabels = {
+    work: "Work",
+    education: "Education",
+    project: "Project",
+    research: "Research",
+};
+
+function TimelineComponent({ activity, date, type = "work", current = false, isLast = false }) {
+    const icon = typeIcons[type] || faBriefcase;
+    const label = typeLabels[type] || "Work";
+
     return (
-        <li className="relative mb-6 sm:mb-0">
-            <div className="flex items-center">
-
-                <div className={props.current ? "current-activity" : "normal-activity"}>
-                    <FontAwesomeIcon className="w-4.5 h-4.5" icon={faCalendarDays} />
+        <li className="timeline-item">
+            <div className="timeline-icon-col">
+                <div className={current ? "current-activity" : "normal-activity"}>
+                    <FontAwesomeIcon icon={icon} className="w-4 h-4" />
                 </div>
-
-                <div className="hidden sm:flex w-full h-0.5" style={{ background: 'linear-gradient(to right, rgba(52,211,153,0.8), rgba(52,211,153,0.2))' }}></div>
+                {!isLast && <div className="timeline-connector" />}
             </div>
 
-            <div className="mt-3 sm:pe-8">
-                <div key={props.index}>
-                    <h3 className="text-lg font-semibold text-white">{props.activity}</h3>
-                    <time
-                        className="block mb-2 text-sm font-normal leading-none" style={{ color: '#34d399' }}>
-                        {props.date}
-                    </time>
+            <div className={`timeline-card ${current ? "timeline-card--current" : ""}`}>
+                <div className="timeline-card-header">
+                    <time className="timeline-date">{date}</time>
+                    <span className={`timeline-type-badge timeline-type-badge--${type}`}>{label}</span>
                 </div>
+                <p className="timeline-activity">{activity}</p>
+                {current && (
+                    <span className="timeline-current-badge">
+                        <span className="timeline-current-dot" />
+                        Active
+                    </span>
+                )}
             </div>
         </li>
     );
