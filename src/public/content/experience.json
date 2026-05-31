@@ -1,6 +1,17 @@
 {
   "industry": [
     {
+      "position": "AI Engineer",
+      "company": "NextPax",
+      "location": "Netherlands Almere",
+      "date": "04/2026 - now",
+      "length": "-",
+      "description": "",
+      "achievements": [
+        "Implementing Multi-Agent architecture for NextPax Support team. Refactoring a legacy approach and refining the logic."
+      ]
+    },
+    {
       "position": "AI Software Engineer (Internship)",
       "company": "Dutch Rose Media",
       "location": "Netherlands Eindhoven",
