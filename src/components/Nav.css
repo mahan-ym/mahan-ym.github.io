@@ -1,10 +1,11 @@
 .site-nav {
     position: fixed;
     top: 16px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 16px;
     z-index: 50;
     transition: all 0.35s ease;
+    width: max-content;
+    max-width: calc(100vw - 32px);
 }
 
 .nav-inner {
@@ -22,6 +23,89 @@
 .site-nav--scrolled .nav-inner {
     border-color: rgba(139, 92, 246, 0.55);
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(139, 92, 246, 0.15);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Hamburger button — hidden on desktop */
+.nav-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 9999px;
+    flex-shrink: 0;
+}
+
+.nav-hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #94a3b8;
+    border-radius: 2px;
+    transition: all 0.25s ease;
+    transform-origin: center;
+}
+
+.nav-hamburger--open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-hamburger--open span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.nav-hamburger--open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile dropdown menu */
+.nav-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px;
+    padding: 10px;
+    border-radius: 16px;
+    background: rgba(3, 7, 18, 0.92);
+    border: 1px solid rgba(139, 92, 246, 0.35);
+    backdrop-filter: blur(24px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 20px rgba(139, 92, 246, 0.12);
+    width: 100%;
+}
+
+.nav-mobile-btn {
+    padding: 10px 16px;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #94a3b8;
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: Figtree, system-ui, sans-serif;
+    letter-spacing: 0.02em;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.nav-mobile-btn:hover {
+    color: #e2e8f0;
+    background: rgba(139, 92, 246, 0.15);
+    border-color: rgba(139, 92, 246, 0.3);
 }
 
 .nav-btn {
@@ -52,14 +136,17 @@
     box-shadow: 0 0 14px rgba(139, 92, 246, 0.35);
 }
 
-@media (max-width: 574px) {
-    .nav-inner {
-        gap: 2px;
-        padding: 5px 8px;
+@media (max-width: 640px) {
+    .nav-links {
+        display: none;
     }
 
-    .nav-btn {
-        padding: 5px 8px;
-        font-size: 0.7rem;
+    .nav-hamburger {
+        display: flex;
+    }
+
+    .nav-inner {
+        padding: 4px 10px;
+        border-radius: 9999px;
     }
 }

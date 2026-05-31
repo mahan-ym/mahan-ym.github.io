@@ -14,10 +14,12 @@ const sections = [
 function Nav() {
     const [activeSection, setActiveSection] = useState('me');
     const [scrolled, setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 60);
+            if (menuOpen) setMenuOpen(false);
 
             const sectionEls = sections
                 .map(s => document.getElementById(s.id))
@@ -33,25 +35,50 @@ function Nav() {
 
         window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [menuOpen]);
 
     const scrollTo = (id) => {
         document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setMenuOpen(false);
     };
 
     return (
         <nav className={`site-nav ${scrolled ? 'site-nav--scrolled' : ''}`}>
             <div className="nav-inner">
-                {sections.map(s => (
-                    <button
-                        key={s.id}
-                        className={`nav-btn ${activeSection === s.id ? 'nav-btn--active' : ''}`}
-                        onClick={() => scrollTo(s.id)}
-                    >
-                        {s.label}
-                    </button>
-                ))}
+                <div className="nav-links">
+                    {sections.map(s => (
+                        <button
+                            key={s.id}
+                            className={`nav-btn ${activeSection === s.id ? 'nav-btn--active' : ''}`}
+                            onClick={() => scrollTo(s.id)}
+                        >
+                            {s.label}
+                        </button>
+                    ))}
+                </div>
+                <button
+                    className={`nav-hamburger ${menuOpen ? 'nav-hamburger--open' : ''}`}
+                    onClick={() => setMenuOpen(o => !o)}
+                    aria-label="Toggle menu"
+                >
+                    <span />
+                    <span />
+                    <span />
+                </button>
             </div>
+            {menuOpen && (
+                <div className="nav-mobile-menu">
+                    {sections.map(s => (
+                        <button
+                            key={s.id}
+                            className={`nav-mobile-btn ${activeSection === s.id ? 'nav-btn--active' : ''}`}
+                            onClick={() => scrollTo(s.id)}
+                        >
+                            {s.label}
+                        </button>
+                    ))}
+                </div>
+            )}
         </nav>
     );
 }
